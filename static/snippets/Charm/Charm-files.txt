@@ -1,0 +1,2 @@
+Charm-Bold.woff2
+Charm-Regular.woff2

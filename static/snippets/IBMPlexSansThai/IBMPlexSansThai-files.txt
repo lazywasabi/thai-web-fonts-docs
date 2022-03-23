@@ -1,0 +1,8 @@
+IBMPlexSansThai-Bold.woff2
+IBMPlexSansThai-ExtraLight.woff2
+IBMPlexSansThai-Light.woff2
+IBMPlexSansThai-Medium.woff2
+IBMPlexSansThai-Regular.woff2
+IBMPlexSansThai-SemiBold.woff2
+IBMPlexSansThai-Text.woff2
+IBMPlexSansThai-Thin.woff2

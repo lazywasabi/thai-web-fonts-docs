@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Chulabhorn Likit Text';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/ChulabhornLikitText/ChulabhornLikitText-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chulabhorn Likit Text';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/ChulabhornLikitText/ChulabhornLikitText-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chulabhorn Likit Text';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/ChulabhornLikitText/ChulabhornLikitText-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+}
+
+@font-face {
+  font-family: 'Chulabhorn Likit Text';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/ChulabhornLikitText/ChulabhornLikitText-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

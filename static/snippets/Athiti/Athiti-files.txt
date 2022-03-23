@@ -1,0 +1,6 @@
+Athiti-Bold.woff2
+Athiti-ExtraLight.woff2
+Athiti-Light.woff2
+Athiti-Medium.woff2
+Athiti-Regular.woff2
+Athiti-SemiBold.woff2

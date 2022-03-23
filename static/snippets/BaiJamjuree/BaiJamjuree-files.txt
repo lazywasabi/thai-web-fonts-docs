@@ -1,0 +1,12 @@
+BaiJamjuree-Bold.woff2
+BaiJamjuree-BoldItalic.woff2
+BaiJamjuree-ExtraLight.woff2
+BaiJamjuree-ExtraLightItalic.woff2
+BaiJamjuree-Italic.woff2
+BaiJamjuree-Light.woff2
+BaiJamjuree-LightItalic.woff2
+BaiJamjuree-Medium.woff2
+BaiJamjuree-MediumItalic.woff2
+BaiJamjuree-Regular.woff2
+BaiJamjuree-SemiBold.woff2
+BaiJamjuree-SemiBoldItalic.woff2

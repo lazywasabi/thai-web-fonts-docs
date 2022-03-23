@@ -1,0 +1,12 @@
+Niramit-Bold.woff2
+Niramit-BoldItalic.woff2
+Niramit-ExtraLight.woff2
+Niramit-ExtraLightItalic.woff2
+Niramit-Italic.woff2
+Niramit-Light.woff2
+Niramit-LightItalic.woff2
+Niramit-Medium.woff2
+Niramit-MediumItalic.woff2
+Niramit-Regular.woff2
+Niramit-SemiBold.woff2
+Niramit-SemiBoldItalic.woff2

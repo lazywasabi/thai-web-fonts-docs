@@ -1,0 +1,4 @@
+ChulabhornLikitText-Bold.woff2
+ChulabhornLikitText-Light.woff2
+ChulabhornLikitText-Medium.woff2
+ChulabhornLikitText-Regular.woff2

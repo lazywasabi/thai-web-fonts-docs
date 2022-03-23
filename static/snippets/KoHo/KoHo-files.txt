@@ -1,0 +1,12 @@
+KoHo-Bold.woff2
+KoHo-BoldItalic.woff2
+KoHo-ExtraLight.woff2
+KoHo-ExtraLightItalic.woff2
+KoHo-Italic.woff2
+KoHo-Light.woff2
+KoHo-LightItalic.woff2
+KoHo-Medium.woff2
+KoHo-MediumItalic.woff2
+KoHo-Regular.woff2
+KoHo-SemiBold.woff2
+KoHo-SemiBoldItalic.woff2

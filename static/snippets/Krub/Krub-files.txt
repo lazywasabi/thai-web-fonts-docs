@@ -1,0 +1,12 @@
+Krub-Bold.woff2
+Krub-BoldItalic.woff2
+Krub-ExtraLight.woff2
+Krub-ExtraLightItalic.woff2
+Krub-Italic.woff2
+Krub-Light.woff2
+Krub-LightItalic.woff2
+Krub-Medium.woff2
+Krub-MediumItalic.woff2
+Krub-Regular.woff2
+Krub-SemiBold.woff2
+Krub-SemiBoldItalic.woff2

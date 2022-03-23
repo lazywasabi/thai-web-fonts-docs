@@ -1,0 +1,6 @@
+Mitr-Bold.woff2
+Mitr-ExtraLight.woff2
+Mitr-Light.woff2
+Mitr-Medium.woff2
+Mitr-Regular.woff2
+Mitr-SemiBold.woff2

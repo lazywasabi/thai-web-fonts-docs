@@ -1,0 +1,12 @@
+Kodchasan-Bold.woff2
+Kodchasan-BoldItalic.woff2
+Kodchasan-ExtraLight.woff2
+Kodchasan-ExtraLightItalic.woff2
+Kodchasan-Italic.woff2
+Kodchasan-Light.woff2
+Kodchasan-LightItalic.woff2
+Kodchasan-Medium.woff2
+Kodchasan-MediumItalic.woff2
+Kodchasan-Regular.woff2
+Kodchasan-SemiBold.woff2
+Kodchasan-SemiBoldItalic.woff2

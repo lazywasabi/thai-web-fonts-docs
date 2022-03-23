@@ -1,0 +1,6 @@
+Umpush-Bold.woff2
+Umpush-BoldOblique.woff2
+Umpush-Light.woff2
+Umpush-LightOblique.woff2
+Umpush-Oblique.woff2
+Umpush-Regular.woff2

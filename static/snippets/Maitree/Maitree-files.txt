@@ -1,0 +1,6 @@
+Maitree-Bold.woff2
+Maitree-ExtraLight.woff2
+Maitree-Light.woff2
+Maitree-Medium.woff2
+Maitree-Regular.woff2
+Maitree-Semibold.woff2

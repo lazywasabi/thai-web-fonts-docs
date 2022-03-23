@@ -1,0 +1,15 @@
+baseURL = 'https://thaiwebfonts.lazywasabi.com/'
+languageCode = 'th'
+title = 'Thai Web Fonts'
+theme = 'hugo-geekdoc'
+enableRobotsTXT = true
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+# enableGitInfo = true
+
+[params]
+  geekdocLogo = "logo.svg"
+  geekdocCollapseAllSections = true

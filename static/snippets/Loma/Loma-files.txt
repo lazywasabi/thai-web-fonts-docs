@@ -1,0 +1,4 @@
+Loma-Bold.woff2
+Loma-BoldOblique.woff2
+Loma-Oblique.woff2
+Loma-Regular.woff2

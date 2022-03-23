@@ -1,0 +1,6 @@
+Kinnari-Bold.woff2
+Kinnari-BoldItalic.woff2
+Kinnari-BoldOblique.woff2
+Kinnari-Italic.woff2
+Kinnari-Oblique.woff2
+Kinnari-Regular.woff2

@@ -1,0 +1,8 @@
+IBMPlexSansThaiLooped-Bold.woff2
+IBMPlexSansThaiLooped-ExtraLight.woff2
+IBMPlexSansThaiLooped-Light.woff2
+IBMPlexSansThaiLooped-Medium.woff2
+IBMPlexSansThaiLooped-Regular.woff2
+IBMPlexSansThaiLooped-SemiBold.woff2
+IBMPlexSansThaiLooped-Text.woff2
+IBMPlexSansThaiLooped-Thin.woff2

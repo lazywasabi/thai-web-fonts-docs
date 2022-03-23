@@ -1,0 +1,12 @@
+Fahkwang-Bold.woff2
+Fahkwang-BoldItalic.woff2
+Fahkwang-ExtraLight.woff2
+Fahkwang-ExtraLightItalic.woff2
+Fahkwang-Italic.woff2
+Fahkwang-Light.woff2
+Fahkwang-LightItalic.woff2
+Fahkwang-Medium.woff2
+Fahkwang-MediumItalic.woff2
+Fahkwang-Regular.woff2
+Fahkwang-SemiBold.woff2
+Fahkwang-SemiBoldItalic.woff2

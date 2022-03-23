@@ -1,0 +1,6 @@
+Pridi-Bold.woff2
+Pridi-ExtraLight.woff2
+Pridi-Light.woff2
+Pridi-Medium.woff2
+Pridi-Regular.woff2
+Pridi-SemiBold.woff2

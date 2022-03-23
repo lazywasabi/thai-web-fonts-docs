@@ -1,0 +1,4 @@
+Garuda-Bold.woff2
+Garuda-BoldOblique.woff2
+Garuda-Oblique.woff2
+Garuda-Regular.woff2

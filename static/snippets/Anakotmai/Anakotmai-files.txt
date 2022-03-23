@@ -1,0 +1,3 @@
+Anakotmai-Bold.woff2
+Anakotmai-Light.woff2
+Anakotmai-Medium.woff2

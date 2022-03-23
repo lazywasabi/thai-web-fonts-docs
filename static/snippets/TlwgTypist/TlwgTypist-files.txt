@@ -1,0 +1,4 @@
+TlwgTypist-Bold.woff2
+TlwgTypist-BoldOblique.woff2
+TlwgTypist-Oblique.woff2
+TlwgTypist-Regular.woff2

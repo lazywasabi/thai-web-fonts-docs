@@ -1,0 +1,12 @@
+ChakraPetch-Bold.woff2
+ChakraPetch-BoldItalic.woff2
+ChakraPetch-ExtraLight.woff2
+ChakraPetch-ExtraLightItalic.woff2
+ChakraPetch-Italic.woff2
+ChakraPetch-Light.woff2
+ChakraPetch-LightItalic.woff2
+ChakraPetch-Medium.woff2
+ChakraPetch-MediumItalic.woff2
+ChakraPetch-Regular.woff2
+ChakraPetch-SemiBold.woff2
+ChakraPetch-SemiBoldItalic.woff2

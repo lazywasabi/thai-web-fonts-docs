@@ -1,0 +1,12 @@
+Mali-Bold.woff2
+Mali-BoldItalic.woff2
+Mali-ExtraLight.woff2
+Mali-ExtraLightItalic.woff2
+Mali-Italic.woff2
+Mali-Light.woff2
+Mali-LightItalic.woff2
+Mali-Medium.woff2
+Mali-MediumItalic.woff2
+Mali-Regular.woff2
+Mali-SemiBold.woff2
+Mali-SemiBoldItalic.woff2

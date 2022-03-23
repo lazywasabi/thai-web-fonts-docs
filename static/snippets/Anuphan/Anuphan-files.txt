@@ -1,0 +1,7 @@
+Anuphan-Bold.woff2
+Anuphan-ExtraLight.woff2
+Anuphan-Light.woff2
+Anuphan-Medium.woff2
+Anuphan-Regular.woff2
+Anuphan-SemiBold.woff2
+Anuphan-Thin.woff2

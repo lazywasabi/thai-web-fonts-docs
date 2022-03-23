@@ -1,0 +1,10 @@
+Boon-Bold.woff2
+Boon-BoldItalic.woff2
+Boon-Italic.woff2
+Boon-Light.woff2
+Boon-LightItalic.woff2
+Boon-Medium.woff2
+Boon-MediumItalic.woff2
+Boon-Regular.woff2
+Boon-SemiBold.woff2
+Boon-SemiBoldItalic.woff2

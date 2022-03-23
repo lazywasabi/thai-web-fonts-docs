@@ -1,0 +1,4 @@
+Thasadith-Bold.woff2
+Thasadith-BoldItalic.woff2
+Thasadith-Italic.woff2
+Thasadith-Regular.woff2

@@ -1,0 +1,16 @@
+Sarabun-Bold.woff2
+Sarabun-BoldItalic.woff2
+Sarabun-ExtraBold.woff2
+Sarabun-ExtraBoldItalic.woff2
+Sarabun-ExtraLight.woff2
+Sarabun-ExtraLightItalic.woff2
+Sarabun-Italic.woff2
+Sarabun-Light.woff2
+Sarabun-LightItalic.woff2
+Sarabun-Medium.woff2
+Sarabun-MediumItalic.woff2
+Sarabun-Regular.woff2
+Sarabun-SemiBold.woff2
+Sarabun-SemiBoldItalic.woff2
+Sarabun-Thin.woff2
+Sarabun-ThinItalic.woff2

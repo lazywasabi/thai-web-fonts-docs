@@ -1,0 +1,31 @@
+{
+  "printWidth": 80,
+  "useTabs": false,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "jsxBracketSameLine": false,
+  "htmlWhitespaceSensitivity": "css",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template"
+      }
+    },
+    {
+      "files": [
+        "content/**/*.md",
+        "static/snippets/**/*.css",
+        "static/snippets/**/*.html"
+      ],
+      "options": {
+        "printWidth": 150
+      }
+    }
+  ]
+}

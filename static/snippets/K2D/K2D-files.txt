@@ -1,0 +1,16 @@
+K2D-Bold.woff2
+K2D-BoldItalic.woff2
+K2D-ExtraBold.woff2
+K2D-ExtraBoldItalic.woff2
+K2D-ExtraLight.woff2
+K2D-ExtraLightItalic.woff2
+K2D-Italic.woff2
+K2D-Light.woff2
+K2D-LightItalic.woff2
+K2D-Medium.woff2
+K2D-MediumItalic.woff2
+K2D-Regular.woff2
+K2D-SemiBold.woff2
+K2D-SemiBoldItalic.woff2
+K2D-Thin.woff2
+K2D-ThinItalic.woff2
