@@ -4,6 +4,10 @@ description: บันทึกการเปลี่ยนแปลงขอ�
 weight: 30
 ---
 
+### v6.1.0
+
+- แก้ไข CSS ฟอนต์ Chonburi
+
 ## v6.0.0
 
 - เพิ่มเว็บไซต์ [thaiwebfonts.lazywasabi.com](https://thaiwebfonts.lazywasabi.com)
