@@ -1,0 +1,9 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/{{ .Params.font.namespace }}/{{ .Params.font.namespace }}.css"
+/><style>
+  .font-preview-content {
+    font-family: '{{ .Params.font.title }}', {{ .Params.font.type }};
+    font-weight: {{ with .Params.font.weight.default }}{{ . }}{{ else }}400{{ end }};
+  }
+</style>
