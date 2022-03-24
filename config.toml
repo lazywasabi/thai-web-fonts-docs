@@ -1,5 +1,6 @@
 baseURL = 'https://thaiwebfonts.lazywasabi.com/'
 languageCode = 'th'
+defaultContentLanguage = 'th'
 title = 'Thai Web Fonts'
 theme = 'hugo-geekdoc'
 enableRobotsTXT = true

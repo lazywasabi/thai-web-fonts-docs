@@ -1,0 +1,45 @@
+---
+edit_page: แก้ไขหน้า
+
+nav_navigation: เมนู
+nav_tags: แท็ก
+nav_more: ลิงก์
+nav_top: ขึ้นไปบนสุด
+
+form_placeholder_search: ค้นหา
+
+error_page_title: หลงทาง? ไม่ต้องกังวล
+error_message_title: หลงทาง?
+error_message_code: Error 404
+error_message_text: >
+  เราไม่พบหน้าเว็บที่คุณกำลังตามหา แต่ไม่ต้องกังวล
+  คุณสามารถ<a class="gdoc-error__link" href="{{ . }}">กลับไปหน้าแรก</a>ได้
+
+button_toggle_dark: เปลี่ยนธีม อัตโนมัติ/สว่าง/มืด
+button_nav_open: เปิดเมนูนำทาง
+button_nav_close: ปิดเมนูนำทาง
+button_menu_open: เปิดแถบเมนู
+button_menu_close: ปิดแถบเมนู
+button_homepage: กลับไปหน้าแรก
+
+title_anchor_prefix: 'ลิงก์ไปยัง:'
+
+posts_read_more: อ่านบทความเต็ม
+posts_read_time:
+  one: 'ใช้เวลาอ่าน 1 นาที'
+  other: 'ใช้เวลาอ่าน {{ . }} นาที'
+posts_update_prefix: อัปเดตเมื่อ
+posts_count:
+  one: '1 โพสต์'
+  other: '{{ . }} โพสต์'
+posts_tagged_with: โพสต์ทั้งหมดที่มีแท็ก '{{ . }}'
+
+footer_build_with: >
+  สร้างด้วย <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> และ
+  <svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"></use></svg>
+footer_legal_notice: Legal Notice
+footer_privacy_policy: Privacy Policy
+footer_content_license_prefix: >
+  Content licensed under
+
+language_switch_no_tranlation_prefix: 'Page not translated:'
