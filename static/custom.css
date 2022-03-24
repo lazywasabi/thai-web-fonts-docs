@@ -18,6 +18,17 @@ code {
     'Liberation Mono', 'Courier New', monospace;
 }
 
+.wrapper {
+  padding-top: 65px;
+}
+
+.gdoc-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
 .gdoc-markdown {
   overflow-wrap: break-word;
 }
