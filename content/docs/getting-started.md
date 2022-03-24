@@ -4,6 +4,8 @@ description: เริ่มใช้งาน CDN ฟอนต์ไทย Thai
 weight: 10
 ---
 
+{{< toc >}}
+
 ## ฟอนต์ที่ใช้งานได้ {#available-font}
 
 ใช้ [jsDelivr](https://www.jsdelivr.com/) เพื่อใช้งานฟอนต์ผ่าน CDN
