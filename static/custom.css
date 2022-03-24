@@ -18,6 +18,10 @@ code {
     'Liberation Mono', 'Courier New', monospace;
 }
 
+.gdoc-markdown {
+  overflow-wrap: break-word;
+}
+
 .font-preview-content {
   margin-top: 0.5em;
   padding: 0.5em;
