@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/athiti/
   source: https://github.com/cadsondemak/athiti
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/athiti/blob/master/OFL)'
+  weight:
+    weight: [200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>

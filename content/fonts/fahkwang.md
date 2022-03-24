@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Fah-Kwang/
   source: https://github.com/cadsondemak/Fah-Kwang
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Fah-Kwang/blob/master/OFL.txt)'
+  weight:
+    weight: [200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>

@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/itim/
   source: https://github.com/cadsondemak/itim
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/itim/blob/master/OFL.txt)'
+  weight:
+    weight: [400]
 ---
 
 <div></div>

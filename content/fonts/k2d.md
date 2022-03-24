@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/K2D/
   source: https://github.com/cadsondemak/K2D
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/K2D/blob/master/OFL.txt)'
+  weight:
+    weight: [100, 200, 300, 400, 500, 600, 700, 800]
 ---
 
 <div></div>

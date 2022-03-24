@@ -9,6 +9,8 @@ font:
   website: https://fontuni.com/boontook/
   source: https://github.com/fontuni/boontook
   license: '[SIL Open Font License, version 1.1](https://github.com/fontuni/boontook/blob/master/OFL.txt)'
+  weight:
+    weight: [400]
 ---
 
 <div></div>

@@ -8,6 +8,8 @@ font:
   thaifaces: https://thaifaces.com/specimen/chulabhorn-likit-text/
   website: https://www.cra.ac.th/th/download_fonts
   license: 'SIL Open Font License, version 1.1 (อ้างอิงจาก[คัดสรร ดีมาก](https://www.cadsondemak.com/medias/read/cra-point-of-view))'
+  weight:
+    weight: [300, 400, 500, 700]
 ---
 
 <div></div>

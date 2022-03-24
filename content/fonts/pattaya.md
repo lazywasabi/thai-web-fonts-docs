@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/pattaya/
   source: https://github.com/cadsondemak/pattaya
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/pattaya/blob/master/OFL.txt)'
+  weight:
+    weight: [400]
 ---
 
 <div></div>

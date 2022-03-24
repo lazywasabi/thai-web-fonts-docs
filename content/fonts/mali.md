@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Mali/
   source: https://github.com/cadsondemak/Mali
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Mali/blob/master/OFL.txt)'
+  weight:
+    weight: [200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>

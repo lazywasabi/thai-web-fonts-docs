@@ -9,6 +9,8 @@ font:
   website: https://fontuni.com/boonjot/
   source: https://github.com/fontuni/boonjot
   license: '[SIL Open Font License, version 1.1](https://github.com/fontuni/boonjot/blob/master/OFL.txt)'
+  weight:
+    weight: [400]
 ---
 
 <div></div>

@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/kanit/
   source: https://github.com/cadsondemak/kanit
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/kanit/blob/master/OFL.txt)'
+  weight:
+    weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
 ---
 
 <div></div>

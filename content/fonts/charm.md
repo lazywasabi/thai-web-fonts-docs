@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Charm/
   source: https://github.com/cadsondemak/Charm
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Charm/blob/master/OFL.txt)'
+  weight:
+    weight: [400, 700]
 ---
 
 <div></div>

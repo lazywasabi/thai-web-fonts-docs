@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/mitr/
   source: https://github.com/cadsondemak/mitr
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/mitr/blob/master/OFL)'
+  weight:
+    weight: [200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>

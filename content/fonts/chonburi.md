@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/chonburi/
   source: https://github.com/cadsondemak/chonburi
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/chonburi/blob/master/OFL.txt)'
+  weight:
+    weight: [400]
 ---
 
 <div></div>

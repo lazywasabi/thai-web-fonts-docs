@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Srisakdi/
   source: https://github.com/cadsondemak/Srisakdi
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Srisakdi/blob/master/OFL.txt)'
+  weight:
+    weight: [400, 700]
 ---
 
 <div></div>

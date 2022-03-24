@@ -9,6 +9,8 @@ font:
   website: https://www.cadsondemak.com/medias/read/design-like-a-bilingual-ibm-plex-thai
   source: https://github.com/cadsondemak/Anuphan
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Anuphan/blob/master/OFL.txt)'
+  weight:
+    weight: [100, 200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>

@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Sarabun/
   source: https://github.com/cadsondemak/sarabun
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Sarabun/blob/master/OFL.txt)'
+  weight:
+    weight: [100, 200, 300, 400, 500, 600, 700, 800]
 ---
 
 <div></div>

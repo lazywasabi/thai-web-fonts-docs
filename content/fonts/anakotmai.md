@@ -8,6 +8,9 @@ font:
   thaifaces: https://thaifaces.com/specimen/anakotmai/
   website: https://futureforwardparty.org/?page_id=1242
   license: '[Public Domain](https://futureforwardparty.org/?page_id=1242)'
+  weight:
+    weight: [300, 500, 700]
+    default: 500
 ---
 
 <div></div>

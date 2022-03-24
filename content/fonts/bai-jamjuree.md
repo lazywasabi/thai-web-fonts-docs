@@ -9,6 +9,8 @@ font:
   website: https://cadsondemak.github.io/Bai-Jamjuree/
   source: https://github.com/cadsondemak/Bai-Jamjuree
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Bai-Jamjuree/blob/master/OFL.txt)'
+  weight:
+    weight: [200, 300, 400, 500, 600, 700]
 ---
 
 <div></div>
