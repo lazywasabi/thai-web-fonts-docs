@@ -3,7 +3,9 @@ title: Thai Web Fonts
 description: CDN ฟอนต์ไทย ใช้ฟรี รวมเว็บฟอนต์ภาษาไทย ใช้ฟรีผ่าน CDN
 ---
 
-รวมฟอนต์ภาษาไทย สำหรับใช้งานผ่าน CDN
+## รวมฟอนต์ภาษาไทย สำหรับใช้งานผ่าน CDN
+
+[![เวอร์ชันล่าสุด](https://img.shields.io/github/v/tag/lazywasabi/thai-web-fonts?sort=semver&label=version)](/docs/changelog/) [![](https://data.jsdelivr.com/v1/package/gh/lazywasabi/thai-web-fonts/badge?style=rounded)](https://www.jsdelivr.com/package/gh/lazywasabi/thai-web-fonts)
 
 - เลือกดูฟอนต์และวิธีใช้งานได้จากเมนูด้านข้าง
 - ดูตัวอย่างฟอนต์ และทดลองพิมพ์ได้ที่หน้า[ตัวอย่างฟอนต์](/preview/)
