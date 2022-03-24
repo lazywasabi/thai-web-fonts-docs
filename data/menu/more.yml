@@ -1,0 +1,14 @@
+---
+more:
+  - name: GitHub
+    ref: 'https://github.com/lazywasabi/thai-web-fonts'
+    external: true
+    icon: 'gdoc_github'
+  - name: jsDelivr
+    ref: 'https://www.jsdelivr.com/package/gh/lazywasabi/thai-web-fonts'
+    external: true
+    icon: 'gdoc_language'
+  - name: 'ติดต่อ / แจ้งปัญหา'
+    ref: 'https://lazywasabi.com/contact/'
+    external: true
+    icon: 'gdoc_email'
