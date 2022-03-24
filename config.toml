@@ -14,3 +14,5 @@ disablePathToLower = true
 [params]
   geekdocLogo = "logo.svg"
   geekdocCollapseAllSections = true
+  geekdocRepo = "https://github.com/lazywasabi/thai-web-fonts-docs"
+  geekdocEditPath = "tree/main"
