@@ -5,7 +5,7 @@ description: CDN ฟอนต์ไทย ใช้ฟรี รวมเว็�
 
 ## รวมฟอนต์ภาษาไทย สำหรับใช้งานผ่าน CDN
 
-[![เวอร์ชันล่าสุด](https://img.shields.io/github/v/tag/lazywasabi/thai-web-fonts?sort=semver&label=version)](/docs/changelog/) [![](https://data.jsdelivr.com/v1/package/gh/lazywasabi/thai-web-fonts/badge?style=rounded)](https://www.jsdelivr.com/package/gh/lazywasabi/thai-web-fonts)
+[![เวอร์ชันล่าสุด](https://img.shields.io/github/v/tag/lazywasabi/thai-web-fonts?sort=semver&label=version)](/docs/changelog/) [![จำนวนการใช้รายเดือนบน jsDelivr](https://img.shields.io/jsdelivr/gh/hm/lazywasabi/thai-web-fonts?color=ff5627)](https://www.jsdelivr.com/package/gh/lazywasabi/thai-web-fonts)
 
 - เลือกดูฟอนต์และวิธีใช้งานได้จากเมนูด้านข้าง
 - รองรับเฉพาะไฟล์ WOFF2
