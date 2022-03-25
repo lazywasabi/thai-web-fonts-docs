@@ -18,6 +18,30 @@ code {
     'Liberation Mono', 'Courier New', monospace;
 }
 
+html.color-toggle-auto {
+  color-scheme: auto;
+}
+
+html.color-toggle-light {
+  color-scheme: light;
+}
+
+html.color-toggle-dark {
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  html.color-toggle-auto {
+    color-scheme: light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html.color-toggle-auto {
+    color-scheme: dark;
+  }
+}
+
 .wrapper {
   padding-top: 65px;
 }
