@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="/snippets/Anuphan/Anuphan-font-face.css" />
 <link
-  href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/NotoSansThaiLooped/NotoSansThaiLooped.min.css"
   rel="stylesheet"
+  href="/snippets/NotoSansThaiLooped/NotoSansThaiLooped-font-face.css"
 />
-<link
-  href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/Anuphan/Anuphan.min.css"
-  rel="stylesheet"
-/>
+
+{{- if eq .Section "fonts" -}}
+  {{ partial "font-page/font-preview-style" . }}
+{{- end -}}
