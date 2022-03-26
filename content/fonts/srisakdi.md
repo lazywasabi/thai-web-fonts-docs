@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Srisakdi (ศรีศักดิ์) ใช�
 font:
   title: Srisakdi
   namespace: Srisakdi
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/srisakdi/
   website: https://cadsondemak.github.io/Srisakdi/
   source: https://github.com/cadsondemak/Srisakdi

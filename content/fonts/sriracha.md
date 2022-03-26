@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Sriracha (ศรีราชา) ใช้ฟ�
 font:
   title: Sriracha
   namespace: Sriracha
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/sriracha/
   website: https://cadsondemak.github.io/sriracha/
   source: https://github.com/cadsondemak/sriracha

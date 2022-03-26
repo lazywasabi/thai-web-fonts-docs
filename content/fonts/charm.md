@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Charm (จาม) ใช้ฟรี และ 
 font:
   title: Charm
   namespace: Charm
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/charm/
   website: https://cadsondemak.github.io/Charm/
   source: https://github.com/cadsondemak/Charm

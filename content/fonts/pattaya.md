@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Pattaya (พัทยา) ใช้ฟรี �
 font:
   title: Pattaya
   namespace: Pattaya
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/pattaya/
   website: https://cadsondemak.github.io/pattaya/
   source: https://github.com/cadsondemak/pattaya

@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Trirong (ไตรรงค์) ใช้ฟร
 font:
   title: Trirong
   namespace: Trirong
-  type: sans-serif
+  type: serif
   thaifaces: https://thaifaces.com/specimen/trirong/
   website: https://cadsondemak.github.io/trirong/
   source: https://github.com/cadsondemak/trirong

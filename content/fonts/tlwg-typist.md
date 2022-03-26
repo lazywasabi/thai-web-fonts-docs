@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Tlwg Typist ใช้ฟรี และ CDN �
 font:
   title: Tlwg Typist
   namespace: TlwgTypist
-  type: sans-serif
+  type: monospace
   thaifaces: https://thaifaces.com/specimen/tlwg-typist/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

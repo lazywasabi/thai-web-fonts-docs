@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Charmonman (จามรมาน) ใช้ฟ
 font:
   title: Charmonman
   namespace: Charmonman
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/charmonman/
   website: https://cadsondemak.github.io/Charmonman/
   source: https://github.com/cadsondemak/Charmonman

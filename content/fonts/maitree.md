@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Maitree (ไมตรี) ใช้ฟรี �
 font:
   title: Maitree
   namespace: Maitree
-  type: sans-serif
+  type: serif
   thaifaces: https://thaifaces.com/specimen/maitree/
   website: https://cadsondemak.github.io/maitree/
   source: https://github.com/cadsondemak/maitree

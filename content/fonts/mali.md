@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Mali (มะลิ) ใช้ฟรี แล�
 font:
   title: Mali
   namespace: Mali
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/mali/
   website: https://cadsondemak.github.io/Mali/
   source: https://github.com/cadsondemak/Mali

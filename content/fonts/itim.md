@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Itim (ไอติม) ใช้ฟรี แ�
 font:
   title: Itim
   namespace: Itim
-  type: sans-serif
+  type: cursive
   thaifaces: https://thaifaces.com/specimen/itim/
   website: https://cadsondemak.github.io/itim/
   source: https://github.com/cadsondemak/itim

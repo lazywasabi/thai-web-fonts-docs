@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Taviraj (ทวิราช) ใช้ฟรี
 font:
   title: Taviraj
   namespace: Taviraj
-  type: sans-serif
+  type: serif
   thaifaces: https://thaifaces.com/specimen/taviraj/
   website: https://cadsondemak.github.io/taviraj/
   source: https://github.com/cadsondemak/taviraj

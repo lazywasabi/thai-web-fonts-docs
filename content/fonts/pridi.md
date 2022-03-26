@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Pridi (ปรีดี) ใช้ฟรี แ�
 font:
   title: Pridi
   namespace: Pridi
-  type: sans-serif
+  type: serif
   thaifaces: https://thaifaces.com/specimen/pridi/
   website: https://cadsondemak.github.io/pridi/
   source: https://github.com/cadsondemak/pridi

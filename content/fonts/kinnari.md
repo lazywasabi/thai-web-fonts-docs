@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Kinnari ใช้ฟรี และ CDN ฟอ
 font:
   title: Kinnari
   namespace: Kinnari
-  type: sans-serif
+  type: serif
   thaifaces: https://thaifaces.com/specimen/kinnari/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

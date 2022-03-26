@@ -4,7 +4,7 @@ description: CDN ฟอนต์ Tlwg Typewriter ใช้ฟรี และ CD
 font:
   title: Tlwg Typewriter
   namespace: TlwgTypewriter
-  type: sans-serif
+  type: monospace
   thaifaces: https://thaifaces.com/specimen/tlwg-typewriter/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg
