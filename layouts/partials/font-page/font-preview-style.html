@@ -3,7 +3,7 @@
   href="/snippets/{{ .Params.font.namespace }}/{{ .Params.font.namespace }}-font-face.css"
 /><style>
   .font-preview-content {
-    font-family: '{{ .Params.font.title }}', {{ .Params.font.type }};
+    font-family: '{{ .Params.font.title }}', {{.Params.font.type}};
     font-weight: {{ with .Params.font.weight.default }}{{ . }}{{ else }}400{{ end }};
   }
 </style>
