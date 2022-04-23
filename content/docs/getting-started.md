@@ -36,7 +36,7 @@ https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/ชื่อฟอ
 
 ## CSS {#css}
 
-{{< hint info >}}
+{{< hint type="info" title="หมายเหตุ" >}}
 ไฟล์ CSS รองรับในเวอร์ชัน 6.0.0 ขึ้นไป
 {{< /hint >}}
 

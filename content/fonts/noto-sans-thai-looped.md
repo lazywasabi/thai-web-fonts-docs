@@ -12,7 +12,6 @@ font:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
 ---
 
-{{< hint info >}}
-**หมายเหตุ**\
+{{< hint type="info" title="หมายเหตุ" >}}
 build จากซอร์สบน GitHub [ดูรายละเอียดเพิ่มเติม](https://lazywasabi.com/blog/noto-sans-thai-looped/)
 {{< /hint >}}
