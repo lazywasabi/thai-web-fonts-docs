@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/kinnari/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg
+  download: https://drive.proton.me/urls/AXMFW73F2M#Cz2UoSIJBVnN
   license: '[GNU General Public License, version 2](https://github.com/tlwg/fonts-tlwg/blob/master/COPYING)'
   weight:
     weight: [400, 700]

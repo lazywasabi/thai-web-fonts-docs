@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/niramit/
   website: https://cadsondemak.github.io/Niramit/
   source: https://github.com/cadsondemak/Niramit
+  download: https://fonts.google.com/download?family=Niramit
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Niramit/blob/master/OFL.txt)'
   weight:
     weight: [200, 300, 400, 500, 600, 700]

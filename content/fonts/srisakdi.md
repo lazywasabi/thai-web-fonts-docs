@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/srisakdi/
   website: https://cadsondemak.github.io/Srisakdi/
   source: https://github.com/cadsondemak/Srisakdi
+  download: https://fonts.google.com/download?family=Srisakdi
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Srisakdi/blob/master/OFL.txt)'
   weight:
     weight: [400, 700]

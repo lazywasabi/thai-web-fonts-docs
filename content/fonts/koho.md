@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/koho/
   website: https://cadsondemak.github.io/Koho
   source: https://github.com/cadsondemak/Koho
+  download: https://fonts.google.com/download?family=KoHo
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Koho/blob/master/OFL.txt)'
   weight:
     weight: [200, 300, 400, 500, 600, 700]

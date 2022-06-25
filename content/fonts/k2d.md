@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/k2d/
   website: https://cadsondemak.github.io/K2D/
   source: https://github.com/cadsondemak/K2D
+  download: https://fonts.google.com/download?family=K2D
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/K2D/blob/master/OFL.txt)'
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800]

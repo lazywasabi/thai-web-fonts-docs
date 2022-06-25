@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/prompt/
   website: https://cadsondemak.github.io/prompt/
   source: https://github.com/cadsondemak/prompt
+  download: https://fonts.google.com/download?family=Prompt
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/prompt/blob/master/OFL.txt)'
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]

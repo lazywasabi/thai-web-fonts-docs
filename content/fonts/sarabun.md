@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/sarabun/
   website: https://cadsondemak.github.io/Sarabun/
   source: https://github.com/cadsondemak/sarabun
+  download: https://fonts.google.com/download?family=Sarabun
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Sarabun/blob/master/OFL.txt)'
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800]

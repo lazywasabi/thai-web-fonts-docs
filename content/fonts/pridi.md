@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/pridi/
   website: https://cadsondemak.github.io/pridi/
   source: https://github.com/cadsondemak/pridi
+  download: https://fonts.google.com/download?family=Pridi
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/pridi/blob/master/OFL)'
   weight:
     weight: [200, 300, 400, 500, 600, 700]

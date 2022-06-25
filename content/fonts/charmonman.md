@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/charmonman/
   website: https://cadsondemak.github.io/Charmonman/
   source: https://github.com/cadsondemak/Charmonman
+  download: https://fonts.google.com/download?family=Charmonman
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Charmonman/blob/master/OFL.txt)'
   weight:
     weight: [400, 700]

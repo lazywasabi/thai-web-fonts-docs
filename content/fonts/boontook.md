@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/boontook/
   website: https://fontuni.com/boontook/
   source: https://github.com/fontuni/boontook
+  download: https://github.com/fontuni/boontook/releases/latest
   license: '[SIL Open Font License, version 1.1](https://github.com/fontuni/boontook/blob/master/OFL.txt)'
   weight:
     weight: [400]

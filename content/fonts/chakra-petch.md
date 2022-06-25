@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/chakra-petch/
   website: https://cadsondemak.github.io/Chakra-Petch/
   source: https://github.com/cadsondemak/Chakra-Petch
+  download: https://fonts.google.com/download?family=Chakra+Petch
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Chakra-Petch/blob/master/OFL.txt)'
   weight:
     weight: [200, 300, 400, 500, 600, 700]

@@ -7,6 +7,7 @@ font:
   type: sans-serif
   website: https://fonts.google.com/noto/specimen/Noto+Sans+Thai+Looped
   source: https://github.com/googlefonts/noto-fonts
+  download: https://drive.proton.me/urls/NK2NKKF164#pHr8Nt0ZFKEO
   license: '[SIL Open Font License, version 1.1](https://github.com/googlefonts/noto-fonts/blob/main/LICENSE)'
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]

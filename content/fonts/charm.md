@@ -8,6 +8,7 @@ font:
   thaifaces: https://thaifaces.com/specimen/charm/
   website: https://cadsondemak.github.io/Charm/
   source: https://github.com/cadsondemak/Charm
+  download: https://fonts.google.com/download?family=Charm
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Charm/blob/master/OFL.txt)'
   weight:
     weight: [400, 700]
