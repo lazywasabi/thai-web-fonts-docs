@@ -43,14 +43,6 @@
 <p>ใช้ CSS ด้านล่างนี้เพื่อกำหนดฟอนต์:</p>
 {{- highlight $snippet_family "css" -}}
 {{ "## รายชื่อไฟล์ที่ใช้งานได้ {#list}" | .RenderString }}
-<p>
-  <span class="gdoc-button gdoc-button--regular">
-    <a href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@6/fonts/{{ .Params.font.namespace }}/" class="gdoc-button__link">ดูบน jsDelivr</a>
-  </span>
-  <span class="gdoc-button gdoc-button--regular">
-    <a href="https://github.com/lazywasabi/thai-web-fonts/tree/main/fonts/{{ .Params.font.namespace }}" class="gdoc-button__link">ดูบน GitHub</a>
-  </span>
-</p>
 {{- highlight ($snippet_files | readFile) "plaintext" -}}
 {{ "## ข้อมูลฟอนต์ {#info}" | .RenderString }}
 <p>
