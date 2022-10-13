@@ -1,14 +1,18 @@
 ---
 title: IBM Plex Sans Thai
 description: CDN ฟอนต์ IBM Plex Sans Thai ใช้ฟรี และ CDN ฟอนต์ไทยอื่นๆ
+menu:
+  sidebar:
+    parent: fonts
 font:
   title: IBM Plex Sans Thai
+  titleThai: ไอบีเอ็ม เพล็กซ์ ซานส์ ไทย
   namespace: IBMPlexSansThai
   type: sans-serif
   website: https://www.ibm.com/plex/
   source: https://github.com/IBM/plex
-  download: https://fonts.google.com/download?family=IBM+Plex+Sans+Thai
   license: '[SIL Open Font License, version 1.1](https://github.com/IBM/plex/blob/master/LICENSE.txt)'
+  previewFile: OTF/IBMPlexSansThai-Regular.otf
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700]
 ---

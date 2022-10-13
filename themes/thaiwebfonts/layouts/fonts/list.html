@@ -1,0 +1,52 @@
+{{ define "main" }}
+  {{- $text := "ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ ม ย ร ล ว ศ ษ ส ห ฬ อ ฮ" -}}
+  <div>
+    <h1>{{ .Title }}</h1>
+    <div
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
+    >
+      {{ range .Pages }}
+        {{- $scratch := newScratch -}}
+        {{- with $fontFile := resources.GetRemote ( printf "https://cdn.lazywasabi.net/thai-web-fonts/fonts/%s/%s" .Params.font.namespace .Params.font.previewFile ) }}
+          {{- $image := resources.Get "images/font-preview.png" -}}
+          {{- $image = $image.Resize "640x360 webp" -}}
+          {{- $image = $image.Filter (images.Text $text (dict
+            "font" .
+            "color" "#000"
+            "size" 80
+            "linespacing" 14
+            "x" 20
+            "y" 0
+            ))
+          -}}
+          {{ $scratch.Set "image" $image }}
+        {{- end -}}
+        {{ $previewImage := $scratch.Get "image" }}
+        <div class="col">
+          <div class="card">
+            <a class="text-decoration-none" href="{{ .RelPermalink }}">
+              <div class="card-body border-bottom">
+                <h2 class="card-title text-body text-truncate h5 lh-base m-0">
+                  {{ .Title }}
+                  {{ if .Params.font.variable }}
+                    <span
+                      class="badge text-bg-secondary py-1"
+                      title="Variable fonts"
+                      >VF</span
+                    >
+                  {{ end }}
+                </h2>
+              </div>
+              <img
+                src="{{ $previewImage.RelPermalink }}"
+                loading="lazy"
+                class="card-img-bottom"
+                alt="{{ .Title }}"
+              />
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

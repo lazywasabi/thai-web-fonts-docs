@@ -1,8 +1,20 @@
 ---
 title: บันทึกการเปลี่ยนแปลง
 description: บันทึกการเปลี่ยนแปลงของ Thai Web Fonts รวมเว็บฟอนต์ภาษาไทย ใช้ฟรีผ่าน CDN | CDN ฟอนต์ไทย ใช้ฟรี
-weight: 30
+toc: true
+menu:
+  sidebar:
+    parent: docs
 ---
+
+## next
+
+- อัปเดตฟอนต์ Noto Sans Thai, Noto Sans Thai Looped และ Noto Serif Thai
+  - อัปเดตฟอนต์เป็นเวอร์ชันล่าสุด
+  - ใช้เวอร์ชันเต็มที่รองรับทั้งอักษรไทยและละติน
+  - รองรับ variable fonts ในฟอนต์ Noto Sans Thai และ Noto Serif Thai
+- ลบฟอนต์ Noto Sans Thai UI
+- ปรับปรุงเว็บไซต์ใหม่ทั้งหมด
 
 ## v6.1.1
 

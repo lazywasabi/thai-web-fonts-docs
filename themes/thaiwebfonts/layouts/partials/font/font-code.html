@@ -1,0 +1,60 @@
+{{ $font := .Params.font }}
+{{ $codeFamily := print "font-family: '" $font.title "', " $font.type ";" }}
+
+{{ if $font.variable }}
+  <div class="nav nav-pills mb-3" id="nav-tab" role="tablist">
+    <div class="nav-link text-body ps-0 fw-semibold">เลือกชนิดฟอนต์:</div>
+    <button
+      class="nav-link active"
+      id="nav-variable-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#nav-variable"
+      type="button"
+      role="tab"
+      aria-controls="nav-variable"
+      aria-selected="false"
+    >
+      Variable
+    </button>
+    <button
+      class="nav-link"
+      id="nav-static-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#nav-static"
+      type="button"
+      role="tab"
+      aria-controls="nav-static"
+      aria-selected="false"
+    >
+      Static
+    </button>
+  </div>
+  <div class="tab-content">
+    <div
+      class="tab-pane fade show active"
+      id="nav-variable"
+      role="tabpanel"
+      aria-labelledby="nav-variable-tab"
+      tabindex="0"
+    >
+      {{ partial "font/font-code-var.html" . }}
+    </div>
+    <div
+      class="tab-pane fade"
+      id="nav-static"
+      role="tabpanel"
+      aria-labelledby="nav-static-tab"
+      tabindex="0"
+    >
+      {{ partial "font/font-code-static.html" . }}
+    </div>
+  </div>
+{{ else }}
+  {{ partial "font/font-code-static.html" . }}
+{{ end }}
+
+
+<div class="mt-3">
+  <p>ใช้ CSS ด้านล่างนี้เพื่อกำหนดฟอนต์</p>
+  {{- highlight $codeFamily "css" -}}
+</div>

@@ -1,0 +1,76 @@
+{{ $font := .Params.font }}
+{{ $fontCSS := printf `https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@%s/fonts/%s/%s.css` $.Site.Params.twfVersionMajor $font.namespace $font.namespace }}
+{{ $codeLink := printf `<link href="%s" rel="stylesheet" />` $fontCSS }}
+{{ $codeImport := printf `@import '%s';` $fontCSS }}
+{{ $codeFontFace := trim ( partial "font/font-face.html" . ) "\n" }}
+
+
+<div class="twf-font-snippets">
+  <div class="nav nav-tabs border-bottom-0" id="font-code" role="tablist">
+    <button
+      class="nav-link active"
+      id="code-link-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#code-link"
+      type="button"
+      role="tab"
+      aria-controls="code-link"
+      aria-selected="true"
+    >
+      &lt;link&gt;
+    </button>
+    <button
+      class="nav-link"
+      id="code-font-face-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#code-font-face"
+      type="button"
+      role="tab"
+      aria-controls="code-font-face"
+      aria-selected="false"
+    >
+      @font-face
+    </button>
+    <button
+      class="nav-link"
+      id="code-import-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#code-import"
+      type="button"
+      role="tab"
+      aria-controls="code-import"
+      aria-selected="false"
+    >
+      @import
+    </button>
+  </div>
+  <div class="tab-content" id="font-codeStatic">
+    <div
+      class="tab-pane show active"
+      id="code-link"
+      role="tabpanel"
+      aria-labelledby="code-link-tab"
+      tabindex="0"
+    >
+      {{ transform.Highlight $codeLink "html" }}
+    </div>
+    <div
+      class="tab-pane"
+      id="code-font-face"
+      role="tabpanel"
+      aria-labelledby="code-font-face-tab"
+      tabindex="0"
+    >
+      {{ transform.Highlight $codeFontFace "css" }}
+    </div>
+    <div
+      class="tab-pane"
+      id="code-import"
+      role="tabpanel"
+      aria-labelledby="code-import-tab"
+      tabindex="0"
+    >
+      {{ transform.Highlight $codeImport "css" }}
+    </div>
+  </div>
+</div>

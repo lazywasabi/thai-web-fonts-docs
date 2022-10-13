@@ -1,0 +1,361 @@
+/*
+  Bootstrap's Chroma syntax highlight theme
+  https://github.com/twbs/bootstrap/blob/3790ed0ec3f485fed36bbb2499cfb7b14e36d1c0/site/assets/scss/_syntax.scss
+*/
+
+.chroma {
+  overflow-x: auto;
+
+  --pre-code-color: #262626;
+  --pre-bg: #f5f5f5;
+  --hl-background: rgb(5 150 105 / 15%);
+  --base00: #fff;
+  --base01: #f5f5f5;
+  --base02: #c8c8fa;
+  --base03: #565c64;
+  --base04: #030303;
+  --base05: #333;
+  --base06: #fff;
+  --base07: #b08800;
+  --base08: #ed6a43;
+  --base09: #0086b3;
+  --base0A: #795da3;
+  --base0B: #183691;
+  --base0C: #183691;
+  --base0D: #795da3;
+  --base0E: #a71d5d;
+  --base0F: #333;
+}
+
+html.dark .chroma {
+  --pre-code-color: #d4d4d4;
+  --pre-bg: rgb(0 0 0 / 50%);
+  --hl-background: rgb(4 120 87 / 25%);
+  --base00: #282c34;
+  --base01: #353b45;
+  --base02: #3e4451;
+  --base03: #737373;
+  --base04: #565c64;
+  --base05: #abb2bf;
+  --base06: #b6bdca;
+  --base07: #d19a66;
+  --base08: #e06c75;
+  --base09: #d19a66;
+  --base0A: #e5c07b;
+  --base0B: #98c379;
+  --base0C: #56b6c2;
+  --base0D: #61afef;
+  --base0E: #c678dd;
+  --base0F: #be5046;
+}
+
+.chroma .hll {
+  background-color: #fff;
+}
+
+.chroma .c {
+  color: var(--base03);
+}
+
+.chroma .err {
+  color: var(--base08);
+}
+
+.chroma .k {
+  color: var(--base0E);
+}
+
+.chroma .l {
+  color: var(----base09);
+}
+
+.chroma .n {
+  color: var(--base08);
+}
+
+.chroma .o {
+  color: var(--base05);
+}
+
+.chroma .p {
+  color: var(--base05);
+}
+
+.chroma .cm {
+  color: var(--base04);
+}
+
+.chroma .cp {
+  color: var(--base08);
+}
+
+.chroma .c1 {
+  color: var(--base03);
+}
+
+.chroma .cs {
+  color: var(--base04);
+}
+
+.chroma .gd {
+  color: var(--base08);
+}
+
+.chroma .ge {
+  font-style: italic;
+}
+
+.chroma .gh {
+  font-weight: 600;
+  color: #fff;
+}
+
+.chroma .gi {
+  color: var(--base0C);
+}
+
+.chroma .gp {
+  font-weight: 600;
+  color: var(--base04);
+}
+
+.chroma .gs {
+  font-weight: 600;
+}
+
+.chroma .gu {
+  font-weight: 600;
+  color: var(--base0C);
+}
+
+.chroma .kc {
+  color: var(--base0E);
+}
+
+.chroma .kd {
+  color: var(--base0E);
+}
+
+.chroma .kn {
+  color: var(--base0C);
+}
+
+.chroma .kp {
+  color: var(--base0E);
+}
+
+.chroma .kr {
+  color: var(--base0E);
+}
+
+.chroma .kt {
+  color: var(--base0A);
+}
+
+.chroma .ld {
+  color: var(--base0C);
+}
+
+.chroma .m {
+  color: var(--base09);
+}
+
+.chroma .s {
+  color: var(--base0C);
+}
+
+.chroma .na {
+  color: var(--base0A);
+}
+
+.chroma .nb {
+  color: var(--base05);
+}
+
+.chroma .nc {
+  color: var(--base07);
+}
+
+.chroma .no {
+  color: var(--base08);
+}
+
+.chroma .nd {
+  color: var(--base07);
+}
+
+.chroma .ni {
+  color: var(--base08);
+}
+
+.chroma .ne {
+  color: var(--base08);
+}
+
+.chroma .nf {
+  color: var(--base0B);
+}
+
+.chroma .nl {
+  color: var(--base05);
+}
+
+.chroma .nn {
+  color: var(--base0A);
+}
+
+.chroma .nx {
+  color: var(--base0A);
+}
+
+.chroma .py {
+  color: var(--base08);
+}
+
+.chroma .nt {
+  color: var(--base08);
+}
+
+.chroma .nv {
+  color: var(--base08);
+}
+
+.chroma .ow {
+  color: var(--base0C);
+}
+
+.chroma .w {
+  color: #fff;
+}
+
+.chroma .mf {
+  color: var(--base09);
+}
+
+.chroma .mh {
+  color: var(--base09);
+}
+
+.chroma .mi {
+  color: var(--base09);
+}
+
+.chroma .mo {
+  color: var(--base09);
+}
+
+.chroma .sb {
+  color: var(--base0C);
+}
+
+.chroma .sc {
+  color: #fff;
+}
+
+.chroma .sd {
+  color: var(--base04);
+}
+
+.chroma .s2 {
+  color: var(--base0C);
+}
+
+.chroma .se {
+  color: var(--base09);
+}
+
+.chroma .sh {
+  color: var(--base0C);
+}
+
+.chroma .si {
+  color: var(--base09);
+}
+
+.chroma .sx {
+  color: var(--base0C);
+}
+
+.chroma .sr {
+  color: var(--base0C);
+}
+
+.chroma .s1 {
+  color: var(--base0C);
+}
+
+.chroma .ss {
+  color: var(--base0C);
+}
+
+.chroma .bp {
+  color: var(--base05);
+}
+
+.chroma .vc {
+  color: var(--base08);
+}
+
+.chroma .vg {
+  color: var(--base08);
+}
+
+.chroma .vi {
+  color: var(--base08);
+}
+
+.chroma .il {
+  color: var(--base09);
+}
+
+.chroma .m + .o {
+  color: var(--base03);
+}
+
+.chroma .language-sh .c {
+  color: var(--base03);
+}
+
+.chroma .language-bash::before,
+.chroma .language-sh::before {
+  color: #777;
+  content: '$ ';
+  user-select: none;
+}
+
+.chroma .lntable,
+.chroma .lntable .lntd {
+  padding: 0;
+  margin: 0;
+}
+
+.chroma .lntable {
+  font-size: 1em;
+}
+
+.chroma .lnt {
+  user-select: none;
+  display: block;
+  padding-left: 0;
+  color: var(--base03);
+}
+
+.chroma .lntd .chroma {
+  margin: 0;
+  padding: 0;
+}
+
+.chroma .lntable .line {
+  display: block;
+  padding-left: 1.1428em;
+}
+
+@media (min-width: 768px) {
+  .chroma .lntable .line {
+    padding-left: 1.5em;
+  }
+}
+
+.chroma :is(.hl, .hl .lnt) {
+  background-color: var(--hl-background);
+}

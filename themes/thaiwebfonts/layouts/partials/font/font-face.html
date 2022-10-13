@@ -1,0 +1,40 @@
+<!-- prettier-ignore -->
+{{- $font := .Params.font -}}
+<!-- prettier-ignore -->
+{{- range $font.weight.weight }}
+{{- $weight := . -}}
+{{- if eq $weight 100 -}}
+  {{- $weight = "Thin" -}}
+{{- end -}}
+{{- if eq $weight 200 -}}
+  {{- $weight = "ExtraLight" -}}
+{{- end -}}
+{{- if eq $weight 300 -}}
+  {{- $weight = "Light" -}}
+{{- end -}}
+{{- if eq $weight 400 -}}
+  {{- $weight = "Regular" -}}
+{{- end -}}
+{{- if eq $weight 500 -}}
+  {{- $weight = "Medium" -}}
+{{- end -}}
+{{- if eq $weight 600 -}}
+  {{- $weight = "SemiBold" -}}
+{{- end -}}
+{{- if eq $weight 700 -}}
+  {{- $weight = "Bold" -}}
+{{- end -}}
+{{- if eq $weight 800 -}}
+  {{- $weight = "ExtraBold" -}}
+{{- end -}}
+{{- if eq $weight 900 -}}
+  {{- $weight = "Black" -}}
+{{- end }}
+@font-face {
+  font-family: '{{- $font.title -}}';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@{{- $.Site.Params.twfVersionMajor -}}/fonts/{{- $font.namespace -}}/{{- $font.namespace -}}-{{- $weight -}}.woff2') format('woff2');
+  font-style: normal;
+  font-weight: {{ . }};
+  font-display: swap;
+}
+{{ end -}}

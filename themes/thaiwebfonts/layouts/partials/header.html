@@ -1,0 +1,67 @@
+<nav class="twf-header navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler border-0 p-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSidebar"
+      aria-controls="offcanvasSidebar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{ .Site.BaseURL | relURL }}">
+      <img
+        class="d-none d-sm-inline-block me-1 align-text-top"
+        width="30"
+        src="https://thaiwebfonts.lazywasabi.com/logo.svg"
+        alt="โลโก้ของ {{ .Site.Title }}"
+      />
+      {{ .Site.Title }}
+    </a>
+    <button
+      class="navbar-toggler border-0 p-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end flex-lg-grow-0"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ลิงก์</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body justify-content-end pt-0">
+        <ul class="navbar-nav">
+          {{ range .Site.Menus.header }}
+            <li class="nav-item">
+              <a
+                href="{{ .URL }}"
+                class="nav-link d-flex align-items-center py-lg-0 px-lg-2 gap-2"
+                {{ with .Params.target }}target="{{ . }}"{{ end }}
+              >
+                {{ with .Pre }}
+                  <span class="d-flex fs-5">
+                    {{ . }}
+                  </span>
+                {{ end }}
+                <span class="d-flex">{{ .Name }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

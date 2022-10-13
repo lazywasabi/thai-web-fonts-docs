@@ -1,0 +1,59 @@
+{{ define "main" }}
+  {{ $font := .Params.font }}
+  <article class="text-break">
+    <h1>{{- .Title -}}</h1>
+    <div class="row g-2 mt-3">
+      <div class="col-12 col-sm-auto">
+        <a
+          class="btn btn-primary w-100"
+          href="{{- with $font.download -}}
+            {{- . -}}
+          {{- else }}
+            https://cdn.lazywasabi.net/thai-web-fonts/download/{{- $font.namespace -}}.zip
+          {{- end -}}"
+          {{ with $font.download -}}target="_blank" rel="noreferrer"{{- end }}
+          role="button"
+          >ดาวน์โหลดฟอนต์นี้</a
+        >
+      </div>
+      <div class="col-6 col-sm-auto">
+        <a
+          class="btn btn-outline-secondary w-100"
+          href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@{{ .Site.Params.twfVersionMajor }}/fonts/{{ $font.namespace }}/"
+          target="_blank"
+          rel="noreferrer"
+          role="button"
+          >ดูบน jsDelivr</a
+        >
+      </div>
+      <div class="col-6 col-sm-auto">
+        <a
+          class="btn btn-outline-secondary w-100"
+          href="https://github.com/lazywasabi/thai-web-fonts/tree/main/fonts/{{ $font.namespace }}"
+          target="_blank"
+          rel="noreferrer"
+          role="button"
+          >ดูบน GitHub</a
+        >
+      </div>
+    </div>
+    {{ if $font.variable }}
+      <div class="alert alert-primary mt-4" role="alert">
+        <h4 class="alert-heading">ฟอนต์นี้รองรับ Variable Fonts</h4>
+        <p class="mb-0">
+          หากต้องการใช้งานฟอนต์แบบปกติ เลือกชนิดฟอนต์ด้านล่างเป็น Static
+        </p>
+      </div>
+    {{ end }}
+    <h2 class="mt-4">ทดลองฟอนต์</h2>
+    {{ partial "font/font-preview.html" . }}
+    <h2 class="mt-4">การใช้งาน</h2>
+    <p>
+      โค้ดพร้อมใช้งาน สำหรับฟอนต์รูปแบบปกติ ทุกน้ำหนัก
+      สามารถคัดลอกไปใช้งานได้เลย เบราว์เซอร์จะโหลดเฉพาะไฟล์ที่ต้องใช้เท่านั้น
+    </p>
+    {{ partial "font/font-code.html" . }}
+    {{ partial "font/font-file-list.html" . }}
+    {{ partial "font/font-data.html" . }}
+  </article>
+{{ end }}

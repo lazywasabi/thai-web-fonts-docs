@@ -1,0 +1,10 @@
+<!--prettier-ignore-->
+{{- if .IsHome -}}
+  {{- .Title }} - รวมเว็บฟอนต์ภาษาไทย
+{{- else if .Params.seoTitle -}}
+  {{- .Params.seoTitle }} - {{ .Site.Title -}}
+{{- else if eq .Section "fonts" -}}
+  ฟอนต์ {{ .Title }} - {{ .Site.Title -}}
+{{- else -}}
+  {{- .Title }} - {{ .Site.Title -}}
+{{- end -}}

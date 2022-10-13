@@ -1,0 +1,217 @@
+{{ $font := .Params.font }}
+
+<style>
+  {{- if $font.variable }}
+    {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") | safeCSS -}}
+  {{ else }}
+    {{- partial "font/font-face.html" . | safeCSS -}}
+  {{ end -}}
+
+  .font-preview-content {
+    font-family: '{{ $font.title }}', {{ $font.type }};
+    font-weight: {{ with $font.weight.default }}{{ . }}{{ else }}400{{ end }};
+  }
+</style>
+<div
+  class="row gy-4 twf-font-preview {{ if $font.variable -}}
+    twf-font-preview-variable
+  {{- end }}"
+>
+  <div class="twf-font-preview-settings col-12 col-sm-4 col-lg-3">
+    <div class="twf-font-preview-settings-size">
+      <label for="previewSize"
+        >ขนาด (<span id="previewSizeValue">26</span>px)</label
+      >
+      <input
+        class="form-range h-auto"
+        id="previewSize"
+        type="range"
+        min="10"
+        max="100"
+        step="1"
+        value="26"
+        oninput="setSize(this.value)"
+      />
+    </div>
+    {{- with $font.weight -}}
+      <div class="twf-font-preview-settings-weight mt-3">
+        <div class="row align-items-center mt-2">
+          <div class="col">
+            <label for="previewWeight"
+              >น้ำหนัก
+              {{ if $font.variable -}}
+                (<span id="previewWeightValue">400</span>)
+              {{- end }}</label
+            >
+          </div>
+          <div class="{{ if $font.variable }}col-auto{{ else }}col-12{{ end }}">
+            <div class="dropdown twf-font-preview-settings-weight-dropdown">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle {{ if $font.variable -}}
+                  btn-sm
+                {{- else -}}
+                  d-flex w-100 align-items-center justify-content-between mt-2
+                {{- end }}"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {{- if not $font.variable -}}
+                  {{ $weightDefault := "Regular (400)" -}}
+                  {{- if eq $font.weight.default 500 -}}
+                    {{ $weightDefault = "Medium (500)" -}}
+                  {{- end -}}
+                  <span>{{- $weightDefault -}}</span>
+                {{- end -}}
+              </button>
+              <ul class="dropdown-menu w-100">
+                {{- range .weight -}}
+                  {{- $weight := . -}}
+                  {{- if eq $weight 100 }}
+                    {{- $weight = "Thin (100)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 200 }}
+                    {{- $weight = "Extra Light (200)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 300 }}
+                    {{- $weight = "Light (300)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 400 }}
+                    {{ $weight = "Regular (400)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 500 }}
+                    {{- $weight = "Medium (500)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 600 }}
+                    {{- $weight = "Semi Bold (600)" -}}
+                  {{ end -}}
+                  {{- if eq $weight 700 }}
+                    {{ $weight = "Bold (700)" }}
+                  {{ end -}}
+                  {{- if eq $weight 800 }}
+                    {{ $weight = "Extra Bold (800)" }}
+                  {{ end -}}
+                  {{- if eq $weight 900 }}
+                    {{- $weight = "Black (900)" -}}
+                  {{- end -}}
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      data-value="{{ . }}"
+                      onclick="setWeight(this.dataset.value,this.textContent)"
+                    >
+                      {{- $weight -}}
+                    </button>
+                  </li>
+                {{- end -}}
+              </ul>
+            </div>
+          </div>
+          {{ if $font.variable.weight }}
+            <div class="col-12">
+              <input
+                class="form-range h-auto"
+                id="previewWeight"
+                type="range"
+                min="{{ $font.variable.weight.min }}"
+                max="{{ $font.variable.weight.max }}"
+                step="1"
+                value="400"
+                oninput="setWeight(this.value)"
+              />
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+    {{ if $font.variable.width }}
+      <div class="twf-font-preview-settings-width mt-3">
+        <div class="row align-items-center">
+          <div class="col">
+            <label for="previewWidth"
+              >ความกว้าง (<span id="previewWidthValue">100</span>%)</label
+            >
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle {{ if $font.variable -}}
+                  btn-sm
+                {{- end }}"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-value="100"
+                    onclick="setWidth(this.dataset.value)"
+                  >
+                    Normal (100%)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-value="87.5"
+                    onclick="setWidth(this.dataset.value)"
+                  >
+                    Semi Condensed (87.5%)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-value="75"
+                    onclick="setWidth(this.dataset.value)"
+                  >
+                    Condensed (75%)
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-value="62.5"
+                    onclick="setWidth(this.dataset.value)"
+                  >
+                    Extra Condensed (62.5%)
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <input
+              class="form-range h-auto"
+              id="previewWidth"
+              type="range"
+              min="{{ $font.variable.width.min }}"
+              max="{{ $font.variable.width.max }}"
+              step="0.5"
+              value="100"
+              oninput="setWidth(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  <div class="col">
+    <div
+      class="font-preview-content h-100 bg-secondary rounded border bg-opacity-10 p-3"
+      style="font-size: 26px;"
+      contenteditable=""
+      spellcheck="false"
+    >
+      มนุษย์ทั้งหลายเกิดมามีอิสระและเสมอภาคกันในเกียรติศักดิ์และสิทธิ
+      ต่างมีเหตุผลและมโนธรรม และควรปฏิบัติต่อกันด้วยเจตนารมณ์แห่งภราดรภาพ
+    </div>
+  </div>
+</div>

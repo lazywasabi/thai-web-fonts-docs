@@ -1,0 +1,13 @@
+<!-- prettier-ignore -->
+{{- $font := .font -}}
+<!-- prettier-ignore -->
+@font-face {
+  font-family: '{{- $font.title -}}';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@{{- .Page.Site.Params.twfVersionMajor -}}/fonts/{{- $font.namespace -}}/var/{{- $font.namespace -}}[{{ .variable }}].woff2') format('woff2');
+  font-style: normal;
+{{- if eq .variable "wdth,wght" }}
+  font-stretch: {{ $font.variable.width.min }}% {{ $font.variable.width.max }}%;
+{{- end }}
+  font-weight: {{ $font.variable.weight.min }} {{ $font.variable.weight.max }};
+  font-display: swap;
+}

@@ -1,0 +1,32 @@
+{{- with .Params.toc -}}
+  <div
+    class="twf-docs-toc accordion sticky-lg-top py-lg-4 mt-lg-0 mt-2"
+    id="tocAccordion"
+  >
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="tocAccordionHeading">
+        <button
+          class="accordion-button collapsed d-lg-none px-3 py-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#tocCollapse"
+          aria-expanded="false"
+          aria-controls="tocCollapse"
+        >
+          สารบัญ
+        </button>
+        <span class="h6 d-none d-lg-block">สารบัญ</span>
+      </h2>
+      <div
+        id="tocCollapse"
+        class="accordion-collapse collapse d-lg-block"
+        aria-labelledby="tocAccordionHeading"
+        data-bs-parent="#tocAccordion"
+      >
+        <div class="accordion-body p-0 pt-2">
+          {{ $.TableOfContents }}
+        </div>
+      </div>
+    </div>
+  </div>
+{{- end -}}

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Noto Sans Thai Looped';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@next/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Regular.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai Looped';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@next/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Medium.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai Looped';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@next/fonts/NotoSansThaiLooped/NotoSansThaiLooped-SemiBold.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai Looped';
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@next/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Bold.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --bs-font-sans-serif: 'Noto Sans Thai Looped', system-ui, -apple-system,
+    'Segoe UI', roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  --header-height: 60px;
+}
+
+:target {
+  scroll-margin-top: var(--header-height);
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+.highlight {
+  background-color: var(--bs-gray-100);
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  margin-bottom: 1rem;
+}
+
+.chroma {
+  padding: 1.5rem 1rem;
+  margin: 0;
+}
+
+.btn-clipboard {
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: var(--bs-gray-300);
+  --bs-btn-border-color: var(--bs-gray-300);
+  --bs-btn-border-radius: 0 var(--bs-border-radius) 0 var(--bs-border-radius);
+  --bs-btn-padding-y: 0;
+  --bs-btn-padding-x: 0.4rem;
+  --bs-btn-font-size: 0.75rem;
+
+  font-family: system-ui, sans-serif;
+  border-width: 0 0 var(--bs-border-width) var(--bs-border-width);
+}
+
+.btn-clipboard.btn-success {
+  --bs-btn-bg: var(--bs-success);
+  --bs-btn-color: var(--bs-btn-active-color);
+}
+
+.twf-header {
+  background-color: #cfe2ff;
+}
+
+.navbar-toggler[data-bs-target='#offcanvasNavbar'] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
+}
+
+.twf-sidebar {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 1200;
+}
+
+.twf-sidebar .offcanvas-body {
+  max-height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+  position: sticky;
+  top: var(--header-height);
+}
+
+.twf-sidebar .twf-sidebar-footer {
+  font-size: 0.85rem;
+}
+
+.twf-sidebar-menu {
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-focus-box-shadow: unset;
+  --bs-accordion-btn-padding-y: 0.75rem;
+  --bs-accordion-btn-padding-x: 0.5rem;
+}
+
+.twf-sidebar-menu .twf-sidebar-menu-parent-link {
+  padding: var(--bs-accordion-btn-padding-y) 0;
+}
+
+.twf-sidebar-menu .accordion-button:not(.collapsed) {
+  box-shadow: unset;
+}
+
+.twf-sidebar-menu .accordion-header {
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color);
+}
+
+.twf-sidebar-menu .nav {
+  --bs-nav-link-color: var(--bs-secondary);
+  --bs-nav-link-padding-y: 0.25rem;
+  --bs-nav-link-padding-x: 0.5rem;
+}
+
+.twf-sidebar-menu .nav-link {
+  font-size: 0.9em;
+}
+
+.twf-docs-toc {
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: var(--bs-accordion-btn-bg);
+}
+
+@media (min-width: 992px) {
+  .twf-docs-toc {
+    --bs-accordion-border-width: 0;
+
+    top: var(--header-height);
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
+
+  .twf-docs-toc nav ul {
+    padding-left: 1rem;
+  }
+}
+
+.font-preview-content {
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.font-preview-content:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.twf-font-snippets .nav-tabs .nav-link.active {
+  font-weight: 600;
+}
+
+.twf-font-snippets .tab-content .tab-pane:first-child .highlight {
+  border-radius: 0 var(--bs-border-radius) var(--bs-border-radius);
+}
+
+.twf-font-snippets-variable .tab-content .tab-pane:first-child .highlight {
+  border-radius: var(--bs-border-radius);
+}

@@ -1,15 +1,19 @@
 ---
 title: Chakra Petch
 description: CDN ฟอนต์ ChakraPetch (จักรเพชร) ใช้ฟรี และ CDN ฟอนต์ไทยอื่นๆ
+menu:
+  sidebar:
+    parent: fonts
 font:
   title: Chakra Petch
+  titleThai: จักรเพชร
   namespace: ChakraPetch
   type: sans-serif
   thaifaces: https://thaifaces.com/specimen/chakra-petch/
   website: https://cadsondemak.github.io/Chakra-Petch/
   source: https://github.com/cadsondemak/Chakra-Petch
-  download: https://fonts.google.com/download?family=Chakra+Petch
   license: '[SIL Open Font License, version 1.1](https://github.com/cadsondemak/Chakra-Petch/blob/master/OFL.txt)'
+  previewFile: TTF/ChakraPetch-Regular.ttf
   weight:
     weight: [200, 300, 400, 500, 600, 700]
 ---

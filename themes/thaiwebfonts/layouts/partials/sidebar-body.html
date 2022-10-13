@@ -1,0 +1,111 @@
+<div
+  class="twf-sidebar-menu accordion accordion-flush w-100 mt-1"
+  id="sidebarNav"
+>
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.sidebar }}
+    {{ if .HasChildren }}
+      {{ $show := $currentPage.HasMenuCurrent "sidebar" . }}
+      <div class="accordion-item border-0">
+        <div
+          class="accordion-header position-sticky d-flex align-items-center top-0 bg-white"
+          id="heading-{{ .Identifier }}"
+        >
+          {{- if .URL }}
+            <a
+              class="twf-sidebar-menu-parent-link flex-fill border-end fs-6 text-decoration-none {{ if $show }}
+                text-primary
+              {{ else }}
+                collapsed text-reset
+              {{ end }}"
+              href="{{ .URL }}"
+              >{{ .Name }}</a
+            >
+            <button
+              class="accordion-button {{ if $show -}}
+                text-primary
+              {{ else }}
+                collapsed text-reset
+              {{- end }} w-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-{{ .Identifier }}"
+              aria-expanded="true"
+              aria-controls="collapse-{{ .Identifier }}"
+            ></button>
+          {{- else -}}
+            <button
+              class="accordion-button {{ if $show }}
+                text-primary
+              {{ else }}
+                collapsed text-reset
+              {{ end }}"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-{{ .Identifier }}"
+              aria-expanded="true"
+              aria-controls="collapse-{{ .Identifier }}"
+            >
+              {{ .Name }}
+            </button>
+          {{ end -}}
+        </div>
+        <div
+          id="collapse-{{ .Identifier }}"
+          class="accordion-collapse collapse {{ if $show }}show{{ end }}"
+          aria-labelledby="heading-{{ .Identifier }}"
+        >
+          <div class="accordion-body border-bottom px-0 py-2">
+            <nav class="nav nav-pills flex-column gap-1">
+              {{- range .Children }}
+                {{- $active := $currentPage.IsMenuCurrent "sidebar" . -}}
+                <a
+                  class="nav-link d-inline-block {{ if $active -}}
+                    active
+                  {{- end -}}"
+                  {{ if $active }}aria-current="page"{{ end }}
+                  href="{{ .URL }}"
+                  >{{ .Name }}</a
+                >
+              {{ end -}}
+            </nav>
+          </div>
+        </div>
+      </div>
+    {{ else }}
+      {{ $current :=$currentPage.IsMenuCurrent "sidebar" . }}
+      <div class="accordion-item no-children">
+        <a
+          class="twf-sidebar-menu-parent-link d-flex fs-6 text-decoration-none {{ if $current }}
+            active
+          {{ else }}
+            collapsed text-reset
+          {{ end }} w-full"
+          href="{{ .URL }}"
+          >{{ .Name }}</a
+        >
+      </div>
+    {{ end }}
+
+  {{ end }}
+  <div class="twf-sidebar-footer text-muted py-3">
+    <p class="m-0">
+      สร้างด้วย
+      <a
+        class="text-reset"
+        href="https://gohugo.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hugo</a
+      ><br />
+      ซอร์สโค้ดอยู่บน
+      <a
+        class="text-reset"
+        href="https://github.com/lazywasabi/thai-web-fonts-docs"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+    </p>
+  </div>
+</div>

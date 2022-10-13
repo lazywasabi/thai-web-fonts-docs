@@ -1,0 +1,27 @@
+<h2 class="mt-4">ข้อมูลฟอนต์</h2>
+<ul class="list-unstyled">
+  {{ if .Params.font.license }}
+    <li>
+      สัญญาอนุญาต:
+      {{ .Params.font.license | .RenderString }}
+    </li>
+  {{ end }}
+  {{ if .Params.font.website }}
+    <li>
+      เว็บไซต์:
+      {{ .Params.font.website | .RenderString }}
+    </li>
+  {{ end }}
+  {{ if .Params.font.source }}
+    <li>
+      ซอร์สโค้ด:
+      {{ .Params.font.source | .RenderString }}
+    </li>
+  {{ end }}
+  {{ if .Params.font.thaifaces }}
+    <li>
+      ไทยเฟซ:
+      {{ .Params.font.thaifaces | .RenderString }}
+    </li>
+  {{ end }}
+</ul>

@@ -1,0 +1,9 @@
+{{- with .Get 0 }}
+  {{- if eq . "major" -}}
+    {{- $.Site.Params.twfVersionMajor -}}
+  {{- else if eq . "minor" -}}
+    {{- $.Site.Params.twfVersionMinor -}}
+  {{- end -}}
+{{- else -}}
+  {{- .Site.Params.twfVersion -}}
+{{- end -}}

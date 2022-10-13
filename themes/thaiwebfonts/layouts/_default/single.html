@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="text-break">
+    <div class="row">
+      <div class="col-lg-10">
+        <h1>{{ .Title }}</h1>
+      </div>
+      <aside class="col-lg-2 order-lg-last">
+        {{ partial "toc" . }}
+      </aside>
+      <div class="col-lg-10">
+        <div class="mt-3">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </article>
+{{ end }}
