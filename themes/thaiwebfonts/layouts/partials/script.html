@@ -15,3 +15,10 @@
   crossorigin="anonymous"
 ></script>
 <script src="{{ $bundleJS.RelPermalink }}"></script>
+{{- if not .Site.IsServer -}}
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "ecd045e38fbb42c7b5cf8aa23e01a598"}'
+  ></script>
+{{- end -}}
