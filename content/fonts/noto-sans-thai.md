@@ -25,4 +25,6 @@ font:
       max: 100
 ---
 
-<div></div>
+<div class="alert alert-success mt-3" role="alert">
+  ฟอนต์ Noto Sans Thai อัปเดตใหม่ รองรับทั้งตัวอักษรไทยและละติน และรองรับ variable fonts
+</div>

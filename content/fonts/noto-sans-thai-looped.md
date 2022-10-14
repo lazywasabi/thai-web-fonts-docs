@@ -18,6 +18,6 @@ font:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
 ---
 
-{{</* hint type="info" title="หมายเหตุ" */>}}
-build จากซอร์สบน GitHub [ดูรายละเอียดเพิ่มเติม](https://lazywasabi.com/blog/noto-sans-thai-looped/)
-{{</* /hint */>}}
+<div class="alert alert-success mt-3" role="alert">
+  ฟอนต์ Noto Sans Thai Looped อัปเดตใหม่ รองรับทั้งตัวอักษรไทยและละติน
+</div>

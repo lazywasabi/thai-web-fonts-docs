@@ -16,4 +16,6 @@ font:
     weight: [400, 700]
 ---
 
-<div></div>
+<div class="alert alert-warning mt-3" role="alert">
+  ฟอนต์ Droid Sans Thai รองรับเฉพาะตัวอักษรไทย หากต้องการใช้ตัวอักษรละติน แนะนำให้ใช้คู่กับ<a href="/fonts/noto-sans-thai/" class="alert-link">ฟอนต์ Noto Sans Thai</a>
+</div>
