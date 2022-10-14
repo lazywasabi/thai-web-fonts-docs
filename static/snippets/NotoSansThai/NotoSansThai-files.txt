@@ -11,6 +11,7 @@ NotoSansThai-CondensedSemiBold.woff2
 NotoSansThai-CondensedThin.woff2
 NotoSansThai-ExtraBold.woff2
 NotoSansThai-ExtraCondensed.woff2
+NotoSansThai-ExtraCondensedBlack.woff2
 NotoSansThai-ExtraCondensedBold.woff2
 NotoSansThai-ExtraCondensedExtraBold.woff2
 NotoSansThai-ExtraCondensedExtraLight.woff2
