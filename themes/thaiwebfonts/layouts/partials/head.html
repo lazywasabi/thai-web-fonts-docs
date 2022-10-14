@@ -10,13 +10,22 @@
 <meta
   name="description"
   content="{{- if eq .Section `fonts` -}}
-    ฟอนต์ {{ .Title }} ดาวน์โหลด CDN เว็บฟอนต์ ใช้งานฟรี และรวมฟอนต์ไทยอื่นๆ
-    กว่า 40 ฟอนต์
+    ฟอนต์ {{ .Title }} ดาวน์โหลดฟรี เว็บฟอนต์และ CDN ใช้งานฟรี
+    ตัวอย่างฟอนต์และทดลองพิมพ์ รวมฟอนต์ไทยกว่า 40 ฟอนต์
   {{- else -}}
     {{- .Site.Params.description -}}
   {{- end -}}"
 />
 <meta property="og:title" content="{{- partial `title.html` . -}}" />
+<meta
+  property="og:description"
+  content="{{- if eq .Section `fonts` -}}
+    ฟอนต์ {{ .Title }} ดาวน์โหลดฟรี เว็บฟอนต์และ CDN ใช้งานฟรี
+    ตัวอย่างฟอนต์และทดลองพิมพ์ รวมฟอนต์ไทยกว่า 40 ฟอนต์
+  {{- else -}}
+    {{- .Site.Params.description -}}
+  {{- end -}}"
+/>
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />
 {{ partial "og-image.html" . }}
