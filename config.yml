@@ -16,6 +16,9 @@ markup:
   highlight:
     noClasses: false
     tabWidth: 2
+disableKinds:
+  - taxonomy
+  - term
 menu:
   sidebar:
     - name: 'ฟอนต์'
