@@ -106,6 +106,16 @@
         rel="noopener noreferrer"
         >GitHub</a
       >
+      {{ if .IsPage -}}
+        <br />
+        <a
+          class="text-reset"
+          href="https://github.com/lazywasabi/thai-web-fonts-docs/blob/main/content/{{ .File.Path }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >แก้ไขหน้านี้</a
+        >
+      {{- end }}
     </p>
   </div>
 </div>
