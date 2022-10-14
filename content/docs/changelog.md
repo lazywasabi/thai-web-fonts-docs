@@ -7,10 +7,10 @@ menu:
     parent: docs
 ---
 
-## next
+## v7.0.0
 
-- อัปเดตฟอนต์ Noto Sans Thai, Noto Sans Thai Looped และ Noto Serif Thai
-  - อัปเดตฟอนต์เป็นเวอร์ชันล่าสุด
+- อัปเดตฟอนต์ Noto Sans Thai, Noto Sans Thai Looped และ Noto Serif Thai ([#4](https://github.com/lazywasabi/thai-web-fonts/pull/4))
+  - อัปเดตฟอนต์เป็นเวอร์ชันล่าสุดจาก https://github.com/notofonts/thai/releases
   - ใช้เวอร์ชันเต็มที่รองรับทั้งอักษรไทยและละติน
   - รองรับ variable fonts ในฟอนต์ Noto Sans Thai และ Noto Serif Thai
 - ลบฟอนต์ Noto Sans Thai UI

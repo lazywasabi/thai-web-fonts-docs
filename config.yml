@@ -6,9 +6,9 @@ theme: 'thaiwebfonts'
 enableRobotsTXT: true
 params:
   description: รวมฟอนต์ภาษาไทย ใช้งานฟรี CDN ฟอนต์ไทย ดาวน์โหลดฟอนต์ไทยจาก Thai Web Fonts
-  twfVersion: 'next'
-  twfVersionMinor: 'next'
-  twfVersionMajor: 'next'
+  twfVersion: '7.0.0'
+  twfVersionMinor: '7.0'
+  twfVersionMajor: '7'
 markup:
   goldmark:
     renderer:
