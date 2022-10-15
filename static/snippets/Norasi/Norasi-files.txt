@@ -1,0 +1,6 @@
+Norasi-Bold.woff2
+Norasi-BoldItalic.woff2
+Norasi-BoldOblique.woff2
+Norasi-Italic.woff2
+Norasi-Oblique.woff2
+Norasi-Regular.woff2

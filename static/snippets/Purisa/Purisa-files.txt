@@ -1,0 +1,4 @@
+Purisa-Bold.woff2
+Purisa-BoldOblique.woff2
+Purisa-Oblique.woff2
+Purisa-Regular.woff2

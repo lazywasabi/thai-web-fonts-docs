@@ -1,0 +1,4 @@
+Sawasdee-Bold.woff2
+Sawasdee-BoldOblique.woff2
+Sawasdee-Oblique.woff2
+Sawasdee-Regular.woff2
