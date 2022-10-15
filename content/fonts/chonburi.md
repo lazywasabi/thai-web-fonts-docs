@@ -9,6 +9,7 @@ font:
   titleThai: ชลบุรี
   namespace: Chonburi
   type: serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/chonburi/
   website: https://cadsondemak.github.io/chonburi/
   source: https://github.com/cadsondemak/chonburi

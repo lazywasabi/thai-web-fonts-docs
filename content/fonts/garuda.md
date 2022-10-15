@@ -9,6 +9,7 @@ font:
   titleThai: ครุฑ
   namespace: Garuda
   type: sans-serif
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/garuda/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

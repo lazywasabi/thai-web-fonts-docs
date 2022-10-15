@@ -9,6 +9,7 @@ font:
   titleThai: ทวิราช
   namespace: Taviraj
   type: serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/taviraj/
   website: https://cadsondemak.github.io/taviraj/
   source: https://github.com/cadsondemak/taviraj

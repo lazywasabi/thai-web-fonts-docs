@@ -9,6 +9,7 @@ font:
   titleThai: คชสาร
   namespace: Kodchasan
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/kodchasan/
   website: https://cadsondemak.github.io/Kodchasan
   source: https://github.com/cadsondemak/Kodchasan

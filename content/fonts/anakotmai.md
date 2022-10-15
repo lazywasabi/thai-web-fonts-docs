@@ -9,9 +9,10 @@ font:
   titleThai: อนาคตใหม่
   namespace: Anakotmai
   type: sans-serif
+  author: พรรคอนาคตใหม่
   thaifaces: https://thaifaces.com/specimen/anakotmai/
-  website: https://futureforwardparty.org/?page_id=1242
-  license: '[Public Domain](https://futureforwardparty.org/?page_id=1242)'
+  website: '[https://futureforwardparty.org/?page_id=1242 (Archived)](https://web.archive.org/web/20220810222810/https://futureforwardparty.org/?page_id=1242)'
+  license: '[Public Domain (Archived)](https://web.archive.org/web/20220810222810/https://futureforwardparty.org/?page_id=1242)'
   previewFile: OTF/Anakotmai-Medium.otf
   weight:
     weight: [300, 500, 700]

@@ -9,6 +9,7 @@ font:
   titleThai: จาม
   namespace: Charm
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/charm/
   website: https://cadsondemak.github.io/Charm/
   source: https://github.com/cadsondemak/Charm

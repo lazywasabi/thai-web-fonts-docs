@@ -9,6 +9,7 @@ font:
   titleThai: ไทป์ไรเตอร์
   namespace: TlwgTypewriter
   type: monospace
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/tlwg-typewriter/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

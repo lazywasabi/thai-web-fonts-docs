@@ -9,6 +9,7 @@ font:
   titleThai: โนโต ซานส์ ไทย ลูป
   namespace: NotoSansThaiLooped
   type: sans-serif
+  author: Google
   thaifaces: https://thaifaces.com/specimen/noto-sans-thai-looped/
   website: https://fonts.google.com/noto/specimen/Noto+Sans+Thai+Looped
   source: https://github.com/notofonts/thai

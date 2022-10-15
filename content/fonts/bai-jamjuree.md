@@ -9,6 +9,7 @@ font:
   titleThai: ใบจามจุรี
   namespace: BaiJamjuree
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/bai-jamjuree/
   website: https://cadsondemak.github.io/Bai-Jamjuree/
   source: https://github.com/cadsondemak/Bai-Jamjuree

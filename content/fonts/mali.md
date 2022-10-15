@@ -9,6 +9,7 @@ font:
   titleThai: มะลิ
   namespace: Mali
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/mali/
   website: https://cadsondemak.github.io/Mali/
   source: https://github.com/cadsondemak/Mali

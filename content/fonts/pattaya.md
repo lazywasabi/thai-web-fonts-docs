@@ -9,6 +9,7 @@ font:
   titleThai: พัทยา
   namespace: Pattaya
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/pattaya/
   website: https://cadsondemak.github.io/pattaya/
   source: https://github.com/cadsondemak/pattaya

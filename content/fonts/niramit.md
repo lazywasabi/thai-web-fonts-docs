@@ -9,6 +9,7 @@ font:
   titleThai: นิรมิตร
   namespace: Niramit
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/niramit/
   website: https://cadsondemak.github.io/Niramit/
   source: https://github.com/cadsondemak/Niramit

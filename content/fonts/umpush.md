@@ -9,6 +9,7 @@ font:
   titleThai: อัมพุช
   namespace: Umpush
   type: sans-serif
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/umpush/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

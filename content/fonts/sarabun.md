@@ -9,6 +9,7 @@ font:
   titleThai: สารบัญ
   namespace: Sarabun
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/sarabun/
   website: https://cadsondemak.github.io/Sarabun/
   source: https://github.com/cadsondemak/sarabun

@@ -9,6 +9,7 @@ font:
   titleThai: บุญจด
   namespace: BoonJot
   type: cursive
+  author: ฟอนต์อยู่นี่
   thaifaces: https://thaifaces.com/specimen/boonjot/
   website: https://fontuni.com/boonjot/
   source: https://github.com/fontuni/boonjot

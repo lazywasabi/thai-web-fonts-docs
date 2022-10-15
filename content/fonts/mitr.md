@@ -9,6 +9,7 @@ font:
   titleThai: มิตร
   namespace: Mitr
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/mitr/
   website: https://cadsondemak.github.io/mitr/
   source: https://github.com/cadsondemak/mitr

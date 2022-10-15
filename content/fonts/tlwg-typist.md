@@ -9,6 +9,7 @@ font:
   titleThai: ไทปิสต์
   namespace: TlwgTypist
   type: monospace
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/tlwg-typist/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

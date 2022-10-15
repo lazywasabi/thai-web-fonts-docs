@@ -9,6 +9,7 @@ font:
   titleThai: พร้อม
   namespace: Prompt
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/prompt/
   website: https://cadsondemak.github.io/prompt/
   source: https://github.com/cadsondemak/prompt

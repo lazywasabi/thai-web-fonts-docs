@@ -9,6 +9,7 @@ font:
   titleThai: ไมตรี
   namespace: Maitree
   type: serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/maitree/
   website: https://cadsondemak.github.io/maitree/
   source: https://github.com/cadsondemak/maitree

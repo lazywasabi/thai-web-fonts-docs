@@ -9,6 +9,7 @@ font:
   titleThai: คณิต
   namespace: Kanit
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/kanit/
   website: https://cadsondemak.github.io/kanit/
   source: https://github.com/cadsondemak/kanit

@@ -9,6 +9,7 @@ font:
   titleThai: ปรีดี
   namespace: Pridi
   type: serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/pridi/
   website: https://cadsondemak.github.io/pridi/
   source: https://github.com/cadsondemak/pridi

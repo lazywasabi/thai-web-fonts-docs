@@ -9,6 +9,7 @@ font:
   titleThai: ครับ
   namespace: Krub
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/krub/
   website: https://cadsondemak.github.io/Krub
   source: https://github.com/cadsondemak/Krub

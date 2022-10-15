@@ -9,6 +9,7 @@ font:
   titleThai: โนโต เซริฟ ไทย
   namespace: NotoSerifThai
   type: serif
+  author: Google
   thaifaces: https://thaifaces.com/specimen/noto-serif-thai/
   website: https://fonts.google.com/noto/specimen/Noto+Serif+Thai
   source: https://github.com/notofonts/thai

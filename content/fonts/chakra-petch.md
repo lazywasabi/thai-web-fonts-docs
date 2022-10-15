@@ -9,6 +9,7 @@ font:
   titleThai: จักรเพชร
   namespace: ChakraPetch
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/chakra-petch/
   website: https://cadsondemak.github.io/Chakra-Petch/
   source: https://github.com/cadsondemak/Chakra-Petch

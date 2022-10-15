@@ -9,6 +9,7 @@ font:
   titleThai: ไอบีเอ็ม เพล็กซ์ ซานส์ ไทย
   namespace: IBMPlexSansThai
   type: sans-serif
+  author: IBM
   website: https://www.ibm.com/plex/
   source: https://github.com/IBM/plex
   license: '[SIL Open Font License, version 1.1](https://github.com/IBM/plex/blob/master/LICENSE.txt)'

@@ -9,6 +9,7 @@ font:
   titleThai: ศรีราชา
   namespace: Sriracha
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/sriracha/
   website: https://cadsondemak.github.io/sriracha/
   source: https://github.com/cadsondemak/sriracha

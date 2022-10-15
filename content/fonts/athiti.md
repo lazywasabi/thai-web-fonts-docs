@@ -9,6 +9,7 @@ font:
   titleThai: อทิติ
   namespace: Athiti
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/athiti/
   website: https://cadsondemak.github.io/athiti/
   source: https://github.com/cadsondemak/athiti

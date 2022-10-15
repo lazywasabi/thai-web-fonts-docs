@@ -9,6 +9,7 @@ font:
   titleThai: ไอติม
   namespace: Itim
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/itim/
   website: https://cadsondemak.github.io/itim/
   source: https://github.com/cadsondemak/itim

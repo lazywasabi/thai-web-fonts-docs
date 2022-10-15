@@ -9,6 +9,7 @@ font:
   titleThai: บุญถึก
   namespace: BoonTook
   type: sans-serif
+  author: ฟอนต์อยู่นี่
   thaifaces: https://thaifaces.com/specimen/boontook/
   website: https://fontuni.com/boontook/
   source: https://github.com/fontuni/boontook

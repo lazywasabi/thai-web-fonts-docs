@@ -9,6 +9,7 @@ font:
   titleThai: ศรีศักดิ์
   namespace: Srisakdi
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/srisakdi/
   website: https://cadsondemak.github.io/Srisakdi/
   source: https://github.com/cadsondemak/Srisakdi

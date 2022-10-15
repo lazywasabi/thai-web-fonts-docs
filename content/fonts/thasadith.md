@@ -9,6 +9,7 @@ font:
   titleThai: ธสถิต
   namespace: Thasadith
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/thasadith/
   website: https://cadsondemak.github.io/Thasadith/
   source: https://github.com/cadsondemak/Thasadith

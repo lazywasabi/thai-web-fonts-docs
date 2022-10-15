@@ -9,6 +9,7 @@ font:
   titleThai: ไตรรงค์
   namespace: Trirong
   type: serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/trirong/
   website: https://cadsondemak.github.io/trirong/
   source: https://github.com/cadsondemak/trirong

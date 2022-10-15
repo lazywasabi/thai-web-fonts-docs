@@ -9,6 +9,7 @@ font:
   titleThai: กอฮอ
   namespace: KoHo
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/koho/
   website: https://cadsondemak.github.io/Koho
   source: https://github.com/cadsondemak/Koho

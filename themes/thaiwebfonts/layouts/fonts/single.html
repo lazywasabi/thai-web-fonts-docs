@@ -1,7 +1,16 @@
 {{ define "main" }}
   {{ $font := .Params.font }}
   <article class="text-break">
-    <h1>{{- .Title -}}</h1>
+    <div class="row g-2 align-items-baseline">
+      <div class="col-auto">
+        <h1 class="mb-0">{{- .Title -}}</h1>
+      </div>
+      {{- with $font.author -}}
+        <div class="col-auto">
+          <h2 class="text-secondary h5 mb-0">โดย {{ . }}</h2>
+        </div>
+      {{- end -}}
+    </div>
     {{ .Content }}
     <div class="row g-2 mt-3">
       <div class="col-12 col-sm-auto">

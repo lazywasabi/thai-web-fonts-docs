@@ -9,6 +9,7 @@ font:
   titleThai: กินรี
   namespace: Kinnari
   type: serif
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/kinnari/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

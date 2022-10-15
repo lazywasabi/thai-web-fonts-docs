@@ -9,6 +9,7 @@ font:
   titleThai: อนุพันธ์
   namespace: Anuphan
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/anuphan/
   website: https://www.cadsondemak.com/medias/read/design-like-a-bilingual-ibm-plex-thai
   source: https://github.com/cadsondemak/Anuphan

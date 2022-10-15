@@ -9,6 +9,7 @@ font:
   titleThai: บุญ
   namespace: Boon
   type: sans-serif
+  author: ฟอนต์อยู่นี่
   thaifaces: https://thaifaces.com/specimen/boon/
   website: https://fontuni.com/boon/
   source: https://github.com/fontuni/boon

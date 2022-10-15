@@ -9,6 +9,7 @@ font:
   titleThai: โลมา
   namespace: Loma
   type: sans-serif
+  author: Thai Linux Working Group
   thaifaces: https://thaifaces.com/specimen/loma/
   website: https://linux.thai.net/projects/fonts-tlwg
   source: https://github.com/tlwg/fonts-tlwg

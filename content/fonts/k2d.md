@@ -9,6 +9,7 @@ font:
   titleThai: เคทูดี
   namespace: K2D
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/k2d/
   website: https://cadsondemak.github.io/K2D/
   source: https://github.com/cadsondemak/K2D

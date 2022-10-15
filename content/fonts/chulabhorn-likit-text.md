@@ -9,6 +9,7 @@ font:
   titleThai: จุฬาภรณ์ลิขิต เท็กซ์
   namespace: ChulabhornLikitText
   type: sans-serif
+  author: ราชวิทยาลัยจุฬาภรณ์
   thaifaces: https://thaifaces.com/specimen/chulabhorn-likit-text/
   website: https://www.cra.ac.th/th/download_fonts
   download: https://www.cra.ac.th/th/download_fonts

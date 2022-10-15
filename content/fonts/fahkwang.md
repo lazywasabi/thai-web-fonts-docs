@@ -9,6 +9,7 @@ font:
   titleThai: ฟ้ากว้าง
   namespace: Fahkwang
   type: sans-serif
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/fahkwang/
   website: https://cadsondemak.github.io/Fah-Kwang/
   source: https://github.com/cadsondemak/Fah-Kwang

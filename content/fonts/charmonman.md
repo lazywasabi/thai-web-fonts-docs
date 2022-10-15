@@ -9,6 +9,7 @@ font:
   titleThai: จามรมาน
   namespace: Charmonman
   type: cursive
+  author: คัดสรร ดีมาก
   thaifaces: https://thaifaces.com/specimen/charmonman/
   website: https://cadsondemak.github.io/Charmonman/
   source: https://github.com/cadsondemak/Charmonman

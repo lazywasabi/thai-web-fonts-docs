@@ -9,6 +9,7 @@ font:
   titleThai: ดรอยด์ ซานส์ ไทย
   namespace: DroidSansThai
   type: sans-serif
+  author: Google
   thaifaces: https://thaifaces.com/specimen/droid-sans-thai/
   license: '[Apache License, version 2.0](https://fonts.gstatic.com/ea/droidsansthai/v4/LICENSE.txt)'
   previewFile: TTF/DroidSansThai-Regular.ttf
