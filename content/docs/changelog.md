@@ -7,9 +7,13 @@ menu:
     parent: docs
 ---
 
+## v7.1.0
+
+- เพิ่มฟอนต์ [Norasi](/fonts/norasi), [Purisa](/fonts/Purisa) และ [Sawasdee](/fonts/Sawasdee)
+
 ## v7.0.0
 
-- อัปเดตฟอนต์ Noto Sans Thai, Noto Sans Thai Looped และ Noto Serif Thai ([#4](https://github.com/lazywasabi/thai-web-fonts/pull/4))
+- อัปเดตฟอนต์ [Noto Sans Thai](/fonts/noto-sans-thai/), [Noto Sans Thai Looped](/fonts/noto-sans-thai-looped/) และ [Noto Serif Thai](/fonts/noto-serif-thai/) ([#4](https://github.com/lazywasabi/thai-web-fonts/pull/4))
   - อัปเดตฟอนต์เป็นเวอร์ชันล่าสุดจาก https://github.com/notofonts/thai/releases
   - ใช้เวอร์ชันเต็มที่รองรับทั้งอักษรไทยและละติน
   - รองรับ variable fonts ในฟอนต์ Noto Sans Thai และ Noto Serif Thai
@@ -18,11 +22,11 @@ menu:
 
 ## v6.1.1
 
-- แก้ไข CSS ฟอนต์ Chulabhorn Likit Text
+- แก้ไข CSS ฟอนต์ [Chulabhorn Likit Text](/fonts/chulabhorn-likit-text/)
 
 ## v6.1.0
 
-- แก้ไข CSS ฟอนต์ Chonburi
+- แก้ไข CSS ฟอนต์ [Chonburi](/fonts/chonburi/)
 
 ## v6.0.0
 

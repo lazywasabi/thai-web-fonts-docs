@@ -6,8 +6,8 @@ theme: 'thaiwebfonts'
 enableRobotsTXT: true
 params:
   description: รวมฟอนต์ภาษาไทย ใช้งานฟรี CDN ฟอนต์ไทย ดาวน์โหลดฟอนต์ไทยจาก Thai Web Fonts พร้อมตัวอย่างฟอนต์และทดลองพิมพ์
-  twfVersion: '7.0.0'
-  twfVersionMinor: '7.0'
+  twfVersion: '7.1.0'
+  twfVersionMinor: '7.1'
   twfVersionMajor: '7'
 markup:
   goldmark:
