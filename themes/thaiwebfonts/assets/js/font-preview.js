@@ -1,4 +1,6 @@
 const editor = document.querySelector('.font-preview-content');
+const isVariable = document.querySelector('.twf-font-preview-variable');
+
 if (editor) {
   const previewText = [
     'หมอกสามฤดู กองมูเสียดฟ้า ป่าเขียวขจี ผู้คนดี ประเพณีงาม ลือนามถิ่นบัวตอง',
@@ -34,8 +36,13 @@ if (editor) {
     'ประตูภาคใต้ ไหว้เสด็จในกรมฯ ชมไร่กาแฟ แลหาดทรายรี ดีกล้วยเล็บมือ ขึ้นชื่อรังนก',
     'เมืองงามสามวัฒนธรรม ศูนย์ฮาลาลเลิศล้ำ ชนน้อมนำศรัทธา ถิ่นธรรมชาติงามตา ปัตตานีสันติสุขแดนใต้',
   ];
-  const randomText = Math.floor(Math.random() * previewText.length);
-  editor.innerHTML = previewText[randomText];
+
+  function randomPreview() {
+    const randomText = Math.floor(Math.random() * previewText.length);
+    editor.innerHTML = previewText[randomText];
+  }
+
+  randomPreview();
 
   editor.addEventListener('paste', (e) => {
     e.preventDefault();
@@ -44,28 +51,46 @@ if (editor) {
   });
 
   function setSize(val) {
+    document.getElementById('previewSize').value = val;
     document.getElementById('previewSizeValue').textContent = val;
     editor.style.fontSize = val + 'px';
   }
 
   function setWidth(val) {
     editor.style.fontStretch = val + '%';
-    document.querySelector('#previewWidth').value = val;
-    document.querySelector('#previewWidthValue').textContent = val;
+    if (isVariable) {
+      document.getElementById('previewWidth').value = val;
+      document.getElementById('previewWidthValue').textContent = val;
+    }
   }
 
   function setWeight(val, title) {
-    const isVariable = document.querySelector('.twf-font-preview-variable');
-    const weightVal = document.querySelector('#previewWeightValue');
-    const weightVar = document.querySelector('#previewWeight');
-    editor.style.fontWeight = val;
-    if (isVariable) {
-      weightVal.textContent = val;
-      weightVar.value = val;
+    const previewWeightValue = document.getElementById('previewWeightValue');
+    const previewWeight = document.getElementById('previewWeight');
+    const dropdown = document.querySelector(
+      '.twf-font-preview-settings-weight-dropdown button'
+    );
+    const defaultWeight = dropdown.dataset.defaultWeight;
+    if (val === 'default') {
+      editor.style.fontWeight = defaultWeight;
+      if (isVariable) {
+        previewWeightValue.textContent = defaultWeight;
+        previewWeight.value = defaultWeight;
+      } else {
+        if (defaultWeight === '500') {
+          dropdown.textContent = 'Medium (500)';
+        } else {
+          dropdown.textContent = 'Regular (400)';
+        }
+      }
     } else {
-      document.querySelector(
-        '.twf-font-preview-settings-weight-dropdown button'
-      ).textContent = title;
+      editor.style.fontWeight = val;
+      if (isVariable) {
+        previewWeightValue.textContent = val;
+        previewWeight.value = val;
+      } else {
+        dropdown.textContent = title;
+      }
     }
   }
 }

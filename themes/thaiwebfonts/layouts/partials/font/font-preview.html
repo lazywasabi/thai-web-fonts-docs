@@ -12,6 +12,57 @@
     font-weight: {{ with $font.weight.default }}{{ . }}{{ else }}400{{ end }};
   }
 </style>
+<div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+  <h2 class="mb-0">ทดลองฟอนต์</h2>
+  <div class="btn-group" role="group">
+    <button
+      title="รีเซ็ตเป็นค่าเริ่มต้น"
+      type="button"
+      class="btn btn-light d-flex align-items-center gap-2"
+      onclick="setSize(26);setWeight('default');setWidth(100)"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.1em"
+        height="1.1em"
+        fill="currentColor"
+        class="bi bi-arrow-counterclockwise"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+        />
+        <path
+          d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+        />
+      </svg>
+    </button>
+    <button
+      title="สุ่มข้อความตัวอย่างใหม่"
+      type="button"
+      class="btn btn-light d-flex align-items-center gap-2"
+      onclick="randomPreview()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1.1em"
+        height="1.1em"
+        fill="currentColor"
+        class="bi bi-shuffle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"
+        />
+        <path
+          d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
 <div
   class="row gy-4 twf-font-preview {{ if $font.variable -}}
     twf-font-preview-variable
@@ -34,8 +85,8 @@
       />
     </div>
     {{- with $font.weight -}}
-      <div class="twf-font-preview-settings-weight mt-3">
-        <div class="row align-items-center mt-2">
+      <div class="twf-font-preview-settings-weight mt-2">
+        <div class="row align-items-center">
           <div class="col">
             <label for="previewWeight"
               >น้ำหนัก
@@ -47,6 +98,11 @@
           <div class="{{ if $font.variable }}col-auto{{ else }}col-12{{ end }}">
             <div class="dropdown twf-font-preview-settings-weight-dropdown">
               <button
+                data-default-weight="{{- with $font.weight.default -}}
+                  {{- . -}}
+                {{- else -}}
+                  400
+                {{- end -}}"
                 class="btn btn-outline-secondary dropdown-toggle {{ if $font.variable -}}
                   btn-sm
                 {{- else -}}
@@ -126,7 +182,7 @@
       </div>
     {{ end }}
     {{ if $font.variable.width }}
-      <div class="twf-font-preview-settings-width mt-3">
+      <div class="twf-font-preview-settings-width mt-2">
         <div class="row align-items-center">
           <div class="col">
             <label for="previewWidth"
