@@ -15,7 +15,7 @@
     <div class="row g-2 mt-3">
       <div class="col-12 col-sm-auto">
         <a
-          class="btn btn-primary w-100"
+          class="btn btn-primary w-100 d-flex align-items-center gap-1"
           href="{{- with $font.download -}}
             {{- . -}}
           {{- else }}
@@ -23,7 +23,24 @@
           {{- end -}}"
           {{ with $font.download -}}target="_blank" rel="noreferrer"{{- end }}
           role="button"
-          >ดาวน์โหลดฟอนต์นี้</a
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.25em"
+            height="1.25em"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+            <polyline points="7 11 12 16 17 11"></polyline>
+            <line x1="12" y1="4" x2="12" y2="16"></line>
+          </svg>
+          <span class="text-bold fw-semibold">ดาวน์โหลดฟอนต์นี้</span></a
         >
       </div>
       <div class="col-6 col-sm-auto">
