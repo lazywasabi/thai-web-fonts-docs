@@ -9,7 +9,7 @@ menu:
 
 ## v7.1.0
 
-- เพิ่มฟอนต์ [Norasi](/fonts/norasi), [Purisa](/fonts/Purisa) และ [Sawasdee](/fonts/Sawasdee)
+- เพิ่มฟอนต์ [Norasi](/fonts/norasi), [Purisa](/fonts/purisa) และ [Sawasdee](/fonts/sawasdee)
 
 ## v7.0.0
 
