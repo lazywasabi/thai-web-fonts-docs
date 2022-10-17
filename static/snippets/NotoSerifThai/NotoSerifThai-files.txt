@@ -1,3 +1,5 @@
+var/NotoSerifThai[wdth,wght].woff2
+var/NotoSerifThai[wght].woff2
 NotoSerifThai-Black.woff2
 NotoSerifThai-Bold.woff2
 NotoSerifThai-Condensed.woff2
