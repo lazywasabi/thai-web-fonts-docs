@@ -1,6 +1,7 @@
 {{- $scratch := newScratch -}}
 {{- $image := resources.Get "images/og-image.jpg" -}}
 {{- $text := .Title -}}
+{{- $fontSize := 95 -}}
 {{- if .IsHome -}}
   {{- $text = "รวมเว็บฟอนต์ไทย" -}}
 {{- end -}}
@@ -8,6 +9,7 @@
 {{- if and ( eq .Section "fonts" ) ( .IsPage ) -}}
   {{- $fontURL = printf "https://cdn.lazywasabi.net/thai-web-fonts/fonts/%s/%s" .Params.font.namespace .Params.font.previewFile -}}
   {{- $text = .Params.font.title -}}
+  {{- $fontSize = 120 -}}
   {{- if eq .Title "Droid Sans Thai" -}}
     {{- $text = .Params.font.titleThai -}}
   {{- end -}}
@@ -16,7 +18,7 @@
   {{- $image := $image.Filter (images.Text $text (dict
     "font" $fontFile
     "color" "#000"
-    "size" 120
+    "size" $fontSize
     "linespacing" 0
     "x" 100
     "y" 220
