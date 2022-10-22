@@ -7,6 +7,10 @@ menu:
     parent: docs
 ---
 
+## v7.2.0
+
+- เพิ่มฟอนต์ [LINE Seed Sans TH](/fonts/line-seed-sans-th)
+
 ## v7.1.0
 
 - เพิ่มฟอนต์ [Norasi](/fonts/norasi), [Purisa](/fonts/purisa) และ [Sawasdee](/fonts/sawasdee)
