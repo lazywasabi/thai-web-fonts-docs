@@ -35,6 +35,11 @@
                       >VF</span
                     >
                   {{ end }}
+                  {{ with .Params.badge }}
+                    <span class="badge {{ .class }} py-1" title="Variable fonts"
+                      >{{ .text }}</span
+                    >
+                  {{ end }}
                 </h2>
               </div>
               <img
