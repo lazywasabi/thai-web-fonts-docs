@@ -14,7 +14,6 @@ font:
   type: sans-serif
   author: LINE Corp.
   website: https://seed.line.me/index_th.html
-  download: https://seed.line.me/index_th.html
   license: '[สัญญาอนุญาตของฟอนต์ LINE Seed](https://github.com/lazywasabi/thai-web-fonts/blob/main/fonts/LINESeedSansTH/LICENSE.txt)'
   previewFile: Desktop/OTF/LINESeedSansTH-Regular.otf
   weight:
