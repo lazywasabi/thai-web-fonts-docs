@@ -18,7 +18,3 @@ font:
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
 ---
-
-<div class="alert alert-success mt-3" role="alert">
-  ฟอนต์ Noto Sans Thai Looped อัปเดตใหม่ รองรับทั้งตัวอักษรไทยและละติน
-</div>

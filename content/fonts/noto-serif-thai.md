@@ -25,7 +25,3 @@ font:
       min: 62.5
       max: 100
 ---
-
-<div class="alert alert-success mt-3" role="alert">
-  ฟอนต์ Noto Serif Thai อัปเดตใหม่ รองรับทั้งตัวอักษรไทยและละติน และรองรับ variable fonts
-</div>
