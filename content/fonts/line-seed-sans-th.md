@@ -4,9 +4,6 @@ description: CDN ฟอนต์ LINE Seed Sans TH ใช้ฟรี และ 
 menu:
   sidebar:
     parent: fonts
-badge:
-  text: NEW
-  class: text-bg-danger
 font:
   title: LINE Seed Sans TH
   titleThai: ไลน์ ซีด
