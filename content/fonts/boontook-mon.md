@@ -13,7 +13,6 @@ font:
   thaifaces: https://thaifaces.com/specimen/boontook-mon/
   website: https://fontuni.com/boontook/
   source: https://github.com/fontuni/boontook
-  download: https://khao.soy/dl/fonts/BoonTook
   license: '[SIL Open Font License, version 1.1](https://github.com/fontuni/boontook/blob/master/OFL.txt)'
   previewFile: OTF/BoonTookMon-Regular.otf
   weight:
