@@ -12,7 +12,7 @@ font:
   author: ราชวิทยาลัยจุฬาภรณ์
   thaifaces: https://thaifaces.com/specimen/chulabhorn-likit-text/
   website: https://www.cra.ac.th/th/download_fonts
-  download: https://khao.soy/dl/fonts/ChulabhornLikit
+  download: https://go.lazywasabi.net/dl/fonts/ChulabhornLikit
   license: 'SIL Open Font License, version 1.1 (อ้างอิงจาก[คัดสรร ดีมาก](https://www.cadsondemak.com/medias/read/cra-point-of-view))'
   previewFile: OTF/ChulabhornLikitText-Regular.otf
   weight:
