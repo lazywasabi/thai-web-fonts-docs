@@ -34,7 +34,7 @@ menu:
 
 ## v6.0.0
 
-- เพิ่มเว็บไซต์ [thaiwebfonts.lazywasabi.com](https://thaiwebfonts.lazywasabi.com)
+- เพิ่มเว็บไซต์ [thaiwebfonts.pages.dev](https://thaiwebfonts.pages.dev)
 - เพิ่มไฟล์ CSS ให้ทุกฟอนต์ (รองรับทุกน้ำหนัก เฉพาะตัวปกติ ไม่รวมตัวเอียง)
 
 ## v5.1.0
