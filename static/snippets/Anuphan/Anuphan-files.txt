@@ -1,3 +1,4 @@
+var/Anuphan[wght].woff2
 Anuphan-Bold.woff2
 Anuphan-ExtraLight.woff2
 Anuphan-Light.woff2
