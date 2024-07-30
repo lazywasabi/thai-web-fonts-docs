@@ -17,6 +17,10 @@ font:
   previewFile: OTF/Anuphan-Regular.otf
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700]
+  variable:
+    weight:
+      min: 100
+      max: 700
 ---
 
 <div></div>
