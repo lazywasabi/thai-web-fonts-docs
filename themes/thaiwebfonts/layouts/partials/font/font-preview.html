@@ -2,7 +2,10 @@
 
 <style>
   {{- if $font.variable }}
-    {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") | safeCSS -}}
+    {{- if $font.variable.weight}}
+      {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") | safeCSS -}}
+    {{ else }}
+      {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth") | safeCSS -}}
   {{ else }}
     {{- partial "font/font-face.html" . | safeCSS -}}
   {{ end -}}
