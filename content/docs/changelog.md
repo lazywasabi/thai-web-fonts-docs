@@ -7,6 +7,10 @@ menu:
     parent: docs
 ---
 
+## v7.3.0
+
+- เพิ่มฟอนต์ [Anuphan](/fonts/anuphan) แบบ variable fonts
+
 ## v7.2.0
 
 - เพิ่มฟอนต์ [LINE Seed Sans TH](/fonts/line-seed-sans-th)
