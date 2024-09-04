@@ -5,7 +5,7 @@ title: 'Thai Web Fonts'
 theme: 'thaiwebfonts'
 enableRobotsTXT: true
 params:
-  description: รวมฟอนต์ภาษาไทย 50 ฟอนต์ ใช้งานฟรี CDN ฟอนต์ไทย ดาวน์โหลดฟอนต์ไทยจาก Thai Web Fonts พร้อมตัวอย่างฟอนต์และทดลองพิมพ์ ทุกฟอนต์ใช้เชิงพาณิชย์ได้ ไม่เสียค่าใช้จ่าย
+  description: รวมฟอนต์ภาษาไทย 50 ฟอนต์ ใช้งานฟรี CDN ฟอนต์ไทย ดาวน์โหลดฟอนต์ไทยจาก Thai Web Fonts พร้อมตัวอย่างฟอนต์และทดลองพิมพ์ ทุกฟอนต์ใช้เชิงพาณิชย์ได้ฟรี ไม่เสียค่าใช้จ่าย
   twfVersion: '7.3.0'
   twfVersionMinor: '7.3'
   twfVersionMajor: '7'
@@ -21,13 +21,13 @@ disableKinds:
   - term
 menu:
   sidebar:
-    - name: 'ฟอนต์'
-      identifier: 'fonts'
-      url: '/fonts/'
-      weight: 100
     - name: 'การใช้งาน'
       identifier: 'docs'
       url: '/docs/getting-started//'
+      weight: 100
+    - name: 'ฟอนต์'
+      identifier: 'fonts'
+      url: '/fonts/'
       weight: 200
   header:
     - name: 'GitHub'
