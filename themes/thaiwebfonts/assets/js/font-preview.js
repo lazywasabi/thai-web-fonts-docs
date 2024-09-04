@@ -73,10 +73,12 @@ if (editor) {
   window.onresize = setDefaultSize;
 
   function setWidth(val) {
+    const previewWidth = document.getElementById('previewWidth');
+    const previewWidthValue = document.getElementById('previewWidthValue');
     editor.style.fontStretch = val + '%';
-    if (isVariable) {
-      document.getElementById('previewWidth').value = val;
-      document.getElementById('previewWidthValue').textContent = val;
+    if (isVariable && previewWidth) {
+      previewWidth.value = val;
+      previewWidthValue.textContent = val;
     }
   }
 
