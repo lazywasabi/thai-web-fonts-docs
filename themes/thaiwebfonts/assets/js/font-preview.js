@@ -1,5 +1,6 @@
 const editor = document.querySelector('.font-preview-content');
 const isVariable = document.querySelector('.twf-font-preview-variable');
+let fontSize = 28;
 
 if (editor) {
   const previewText = [
@@ -55,6 +56,21 @@ if (editor) {
     document.getElementById('previewSizeValue').textContent = val;
     editor.style.fontSize = val + 'px';
   }
+
+  function setDefaultSize() {
+    if (window.innerWidth >= 1400) {
+      fontSize = 40;
+    } else if (window.innerWidth >= 992) {
+      fontSize = 36;
+    } else if (window.innerWidth >= 768) {
+      fontSize = 32;
+    } else {
+      fontSize = 28;
+    }
+  }
+  setDefaultSize();
+  setSize(fontSize);
+  window.onresize = setDefaultSize;
 
   function setWidth(val) {
     editor.style.fontStretch = val + '%';

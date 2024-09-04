@@ -25,7 +25,7 @@
       title="รีเซ็ตเป็นค่าเริ่มต้น"
       type="button"
       class="btn btn-light d-flex align-items-center gap-2"
-      onclick="setSize(26);setWeight('default');setWidth(100)"
+      onclick="setSize(fontSize);setWeight('default');setWidth(100)"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@
   <div class="twf-font-preview-settings col-12 col-sm-4 col-lg-3">
     <div class="twf-font-preview-settings-size">
       <label for="previewSize"
-        >ขนาด (<span id="previewSizeValue">26</span>px)</label
+        >ขนาด (<span id="previewSizeValue">28</span>px)</label
       >
       <input
         class="form-range h-auto"
@@ -86,7 +86,7 @@
         min="10"
         max="100"
         step="1"
-        value="26"
+        value="28"
         oninput="setSize(this.value)"
       />
     </div>
@@ -268,7 +268,7 @@
   <div class="col">
     <div
       class="font-preview-content h-100 bg-secondary rounded border bg-opacity-10 p-3"
-      style="font-size: 26px;"
+      style="font-size: 28px;"
       contenteditable=""
       spellcheck="false"
     >
