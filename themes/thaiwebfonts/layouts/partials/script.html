@@ -1,7 +1,8 @@
 {{- $sidebar := resources.Get "js/sidebar.js" -}}
 {{- $codeCopy := resources.Get "js/code-copy.js" -}}
 {{- $fontPreview := resources.Get "js/font-preview.js" -}}
-{{- $bundleJS := slice $sidebar $codeCopy $fontPreview | resources.Concat "js/main.bundle.js" | minify -}}
+{{- $fontSearch := resources.Get "js/font-search.js" -}}
+{{- $bundleJS := slice $sidebar $codeCopy $fontPreview $fontSearch | resources.Concat "js/main.bundle.js" | minify -}}
 
 
 <script
