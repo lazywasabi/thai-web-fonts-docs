@@ -1,8 +1,18 @@
 const searchInput = document.querySelector(".search-input");
 const searchItems = document.querySelectorAll(".font-list-item");
 
-function searchFonts() {
-  const searchQuery = searchInput.value.toLowerCase();
+function searchFonts(query) {
+  const searchQuery = query.toLowerCase();
+  if ('URLSearchParams' in window) {
+    const url = new URL(window.location)
+    if (query) {
+      url.searchParams.set("q", query)
+    } else {
+      url.searchParams.delete("q")
+    }
+    history.replaceState(null, '', url);
+  }
+  searchInput.value = query;
   searchItems.forEach(function (item) {
   const text = item.dataset.tag.toLowerCase();
     if (text.includes(searchQuery)) {
@@ -25,20 +35,11 @@ if (searchInput) {
     const url = new URL(window.location)
     searchInput.value = url.searchParams.get("q");
   }
-  searchFonts();
+  searchFonts(searchInput.value);
 }
 
 if (searchInput) {
   searchInput.addEventListener("input", function () {
-    if ('URLSearchParams' in window) {
-      const url = new URL(window.location)
-      if (searchInput.value) {
-        url.searchParams.set("q", searchInput.value)
-      } else {
-        url.searchParams.delete("q")
-      }
-      history.replaceState(null, '', url);
-    }
-    searchFonts();
+    searchFonts(searchInput.value);
   });
 }
