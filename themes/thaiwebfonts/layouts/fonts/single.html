@@ -13,15 +13,15 @@
     </div>
     {{ .Content }}
     <div class="row g-2 mt-3">
-      <div class="col-12 col-sm-auto d-none">
+      <div class="col-12 col-sm-auto">
         <a
           class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-1"
           href="{{- with $font.download -}}
             {{- . -}}
           {{- else }}
-            https://go.lazywasabi.net/dl/fonts/{{- $font.namespace -}}
+            /download/?font={{- $font.namespace -}}
           {{- end -}}"
-          {{ with $font.download -}}target="_blank" rel="noreferrer"{{- end }}
+          target="_blank" rel="noreferrer"
           role="button"
         >
           <svg
