@@ -16,7 +16,7 @@ menu:
   - มีการปรับหน้าตาฟอนต์ใหม่
   - รองรับ Variable Fonts
 
-**เปรียบเทียบฟอนต์ Noto Sans Thai Looped** เวอร์ชันใหม่และเก่า หากต้องการใช้เวอร์ชันเก่า สามารถ[กำหนดเลขเวอร์ชัน](/docs/versioning/)ใน URL เป็น[เวอร์ชัน 7.3.0](https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/NotoSansThaiLooped/)
+**เปรียบเทียบฟอนต์ Noto Sans Thai Looped** เวอร์ชันใหม่ (บน) และเก่า (ล่าง) หากต้องการใช้เวอร์ชันเก่า สามารถ[กำหนดเลขเวอร์ชัน](/docs/versioning/)ใน URL เป็น[เวอร์ชัน 7.3.0](https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/NotoSansThaiLooped/)
 
 {{< noto-sans-thai-looped-compare >}}
 
