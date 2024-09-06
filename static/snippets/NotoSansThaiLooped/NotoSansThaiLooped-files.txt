@@ -1,3 +1,5 @@
+var/NotoSansThaiLooped[wdth,wght].woff2
+var/NotoSansThaiLooped[wght].woff2
 NotoSansThaiLooped-Black.woff2
 NotoSansThaiLooped-Bold.woff2
 NotoSansThaiLooped-Condensed.woff2

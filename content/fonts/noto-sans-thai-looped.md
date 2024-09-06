@@ -17,4 +17,11 @@ font:
   previewFile: full/OTF/NotoSansThaiLooped-Regular.otf
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+  variable:
+    weight:
+      min: 100
+      max: 900
+    width:
+      min: 62.5
+      max: 100
 ---
