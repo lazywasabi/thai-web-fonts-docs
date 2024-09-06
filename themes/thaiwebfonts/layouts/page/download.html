@@ -4,31 +4,29 @@
 
 {{ define "main" }}
   <article class="text-break">
-    <h1>{{ .Title }}</h1>
+    <h1 class="h2">{{ .Title }}</h1>
     <div class="mt-3">
-      <p class="fs-3">การดาวน์โหลดของคุณจะเริ่มภายใน 3 วินาที หากไม่มีอะไรเกิดขึ้น <a class="download-link" href="#">คลิกที่นี่</a></p>
-      <p class="mt-4 align-items-baseline d-flex gap-2">
-        <span class="fs-5">ดาวน์โหลดเสร็จแล้ว? </span>
-        <button class="btn btn-outline-primary btn-lg" onclick="window.close();">ปิดหน้านี้</button>
+      <p class="fs-5">การดาวน์โหลดของคุณจะเริ่มในไม่ช้า หากไม่มีอะไรเกิดขึ้น<a class="download-link" href="#">คลิกที่นี่</a></p>
+      <p class="fs-5 mt-4 align-items-baseline d-flex gap-2">
+        ดาวน์โหลดเสร็จแล้ว? <a class="link-danger" href="#" onclick="window.close();">ปิดหน้านี้</a>
       </p>
     </div>
   </article>
   <script>
     const title = document.querySelector("h1");
+    const fileName = document.querySelector(".file-name");
     const url = new URL(window.location)
     const downloadFont = url.searchParams.get("font");
     const downloadURL = "/dl/" + downloadFont + ".zip"
     const downloadLink = document.querySelector(".download-link");
 
     if (downloadFont) {
-      console.log(downloadFont);
-      console.log(downloadURL);
-      title.innerText = "กำลังดาวน์โหลดไฟล์ " + downloadFont + ".zip...";
+      title.innerText = "ดาวน์โหลดไฟล์ " + downloadFont + ".zip";
       downloadLink.setAttribute("href", downloadURL);
 
       window.setTimeout(function(){
-       window.location.href = downloadURL;
-      }, 3000);
+        window.location.href = downloadURL;
+      }, 2000);
     }
   </script>
 {{ end }}
