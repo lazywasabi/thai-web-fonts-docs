@@ -46,6 +46,10 @@
   scroll-margin-top: var(--header-height);
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   padding-top: var(--header-height);
 }
