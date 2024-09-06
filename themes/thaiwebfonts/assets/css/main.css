@@ -1,36 +1,9 @@
 @font-face {
   font-family: 'Noto Sans Thai Looped';
-  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Regular.woff2')
-    format('woff2');
+  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/var/NotoSansThaiLooped[wdth,wght].woff2') format('woff2');
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Thai Looped';
-  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Medium.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Thai Looped';
-  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/NotoSansThaiLooped-SemiBold.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Thai Looped';
-  src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/NotoSansThaiLooped/NotoSansThaiLooped-Bold.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 700;
+  font-stretch: 62.5% 100%;
+  font-weight: 100 900;
   font-display: swap;
 }
 
