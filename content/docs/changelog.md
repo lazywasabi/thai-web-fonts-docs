@@ -7,9 +7,22 @@ menu:
     parent: docs
 ---
 
+## v7.4.0
+
+- อัปเดตฟอนต์ [Anuphan](/fonts/anuphan/) เป็นเวอร์ชันใหม่จาก [commit ล่าสุด](https://github.com/cadsondemak/Anuphan/commit/a8ee8448324cc13fb69d585c4f6da4994f7652b0)
+- อัปเดตฟอนต์ [Noto Sans Thai](/fonts/noto-sans-thai/) เป็นเวอร์ชัน [v2.002](https://github.com/notofonts/thai/releases/tag/NotoSansThai-v2.002)
+- อัปเดตฟอนต์ [Noto Serif Thai](/fonts/noto-serif-thai/) เป็นเวอร์ชัน [v2.002](https://github.com/notofonts/thai/releases/tag/NotoSerifThai-v2.002)
+- อัปเดตฟอนต์ [Noto Sans Thai Looped](/fonts/noto-sans-thai-looped/) เป็นเวอร์ชันใหม่จาก [commit ล่าสุด](https://github.com/notofonts/thai/commit/c647dcfa7e671b360906525cb509d21321ecf8fe)
+  - มีการปรับหน้าตาฟอนต์ใหม่
+  - รองรับ Variable Fonts
+
+**เปรียบเทียบฟอนต์ Noto Sans Thai Looped** เวอร์ชันใหม่และเก่า หากต้องการใช้เวอร์ชันเก่า สามารถ[กำหนดเลขเวอร์ชัน](/docs/versioning/)ใน URL เป็น[เวอร์ชัน 7.3.0](https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/NotoSansThaiLooped/)
+
+{{< noto-sans-thai-looped-compare >}}
+
 ## v7.3.0
 
-- เพิ่มฟอนต์ [Anuphan](/fonts/anuphan) แบบ variable fonts
+- เพิ่มฟอนต์ [Anuphan](/fonts/anuphan/) แบบ variable fonts
 
 ## v7.2.0
 
@@ -17,7 +30,7 @@ menu:
 
 ## v7.1.0
 
-- เพิ่มฟอนต์ [Norasi](/fonts/norasi), [Purisa](/fonts/purisa) และ [Sawasdee](/fonts/sawasdee)
+- เพิ่มฟอนต์ [Norasi](/fonts/norasi/), [Purisa](/fonts/purisa/) และ [Sawasdee](/fonts/sawasdee/)
 
 ## v7.0.0
 
@@ -38,7 +51,7 @@ menu:
 
 ## v6.0.0
 
-- เพิ่มเว็บไซต์ [thaiwebfonts.pages.dev](https://thaiwebfonts.pages.dev)
+- เพิ่มเว็บไซต์ [thaiwebfonts.pages.dev](https://thaiwebfonts.pages.dev/)
 - เพิ่มไฟล์ CSS ให้ทุกฟอนต์ (รองรับทุกน้ำหนัก เฉพาะตัวปกติ ไม่รวมตัวเอียง)
 
 ## v5.1.0
