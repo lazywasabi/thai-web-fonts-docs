@@ -29,7 +29,7 @@ font:
 <div class="alert alert-success mt-3" role="alert">
   <h5 class="alert-heading">ฟอนต์อัปเดตใหม่</h5>
   <p class="mb-0">
-    ฟอนต์นี้มีการปรับรูปลักษณ์ฟอนต์ใหม่ในอัปเดตล่าสุด <a class="alert-link" data-bs-toggle="collapse" href="#collapseNotoLooped" aria-expanded="false" aria-controls="collapseNotoLooped">ดูข้อมูลเพิ่มเติม</a>
+    ฟอนต์นี้มีการปรับรูปลักษณ์ใหม่ในอัปเดตล่าสุด <a class="alert-link collapse-expand" data-bs-toggle="collapse" href="#collapseNotoLooped" aria-expanded="false" aria-controls="collapseNotoLooped">ดูข้อมูลเพิ่มเติม</a>
   </p>
   <div class="collapse mt-2" id="collapseNotoLooped">
     <div class="card card-body">
@@ -43,3 +43,10 @@ font:
     </div>
   </div>
 </div>
+<script>
+  window.onload = (event) => {
+    if (location.hash === "#expand-whatsnew") {
+      document.querySelector(".collapse-expand").click();
+    }
+  };
+</script>
