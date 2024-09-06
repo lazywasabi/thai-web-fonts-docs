@@ -5,18 +5,21 @@
 {{ $codeLinkWdthWght := printf `<link href="%s" rel="stylesheet" />` $fontCSSWdthWght }}
 {{ $codeImportWght := printf `@import '%s';` $fontCSSWght }}
 {{ $codeImportWdthWght := printf `@import '%s';` $fontCSSWdthWght }}
+{{ $codeFontFace := "" }}
 
 {{ define "partials/font-code-var-wght" }}
   <p class="mt-3">
-    <strong class="fw-semibold">ตัวเลือกที่ 1:</strong> ปรับได้เฉพาะน้ำหนัก
-    (weight)
+    <strong class="fw-semibold">ฟอนต์นี้รองรับ Variable Fonts</strong>
+    ปรับน้ำหนัก (weight) ได้
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide" target="_blank" rel="noopener noreferrer">ดูวิธีการใช้งาน</a>
   </p>
 {{ end }}
 
 {{ define "partials/font-code-var-wdthwght" }}
-  <p>
-    <strong class="fw-semibold">ตัวเลือกที่ 2:</strong> ปรับได้ทั้งน้ำหนัก
-    (weight) และความกว้าง (width)
+  <p class="mt-3">
+    <strong class="fw-semibold">ฟอนต์นี้รองรับ Variable Fonts</strong>
+    ปรับน้ำหนัก (weight) และความกว้าง (width) ได้
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide" target="_blank" rel="noopener noreferrer">ดูวิธีการใช้งาน</a>
   </p>
 {{ end }}
 
@@ -68,11 +71,12 @@
       aria-labelledby="code-link-var-tab"
       tabindex="0"
     >
-      {{ partialCached "font-code-var-wght" . }}
-      {{ transform.Highlight $codeLinkWght "html" }}
       {{ if and $font.variable.width $font.variable.weight }}
         {{ partialCached "font-code-var-wdthwght" . }}
         {{ transform.Highlight $codeLinkWdthWght "html" }}
+      {{ else if $font.variable.weight }}
+        {{ partialCached "font-code-var-wght" . }}
+        {{ transform.Highlight $codeLinkWght "html" }}
       {{ end }}
     </div>
     <div
@@ -82,14 +86,14 @@
       aria-labelledby="code-font-face-var-tab"
       tabindex="0"
     >
-      {{ partialCached "font-code-var-wght" . }}
-      {{ $codeFontFace := trim ( partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wght") ) "\n" }}
-      {{ transform.Highlight $codeFontFace "css" }}
       {{ if and $font.variable.width $font.variable.weight }}
         {{ partialCached "font-code-var-wdthwght" . }}
         {{ $codeFontFace = trim ( partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") ) "\n" }}
-        {{ transform.Highlight $codeFontFace "css" }}
+      {{ else if $font.variable.weight }}
+        {{ partialCached "font-code-var-wght" . }}
+        {{ $codeFontFace = trim ( partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wght") ) "\n" }}
       {{ end }}
+      {{ transform.Highlight $codeFontFace "css" }}
     </div>
     <div
       class="tab-pane"
@@ -98,11 +102,12 @@
       aria-labelledby="code-import-var-tab"
       tabindex="0"
     >
-      {{ partialCached "font-code-var-wght" . }}
-      {{ transform.Highlight $codeImportWght "css" }}
       {{ if and $font.variable.width $font.variable.weight }}
         {{ partialCached "font-code-var-wdthwght" . }}
         {{ transform.Highlight $codeImportWdthWght "css" }}
+      {{ else if $font.variable.weight }}
+        {{ partialCached "font-code-var-wght" . }}
+        {{ transform.Highlight $codeImportWght "css" }}
       {{ end }}
     </div>
   </div>
