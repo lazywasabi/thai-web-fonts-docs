@@ -64,16 +64,16 @@
         >
       </div>
     </div>
+    {{ partial "font/font-preview.html" . }}
+    <h2 class="mt-4">การใช้งาน</h2>
     {{ if $font.variable }}
-      <div class="alert alert-primary mt-4" role="alert">
-        <h4 class="alert-heading">ฟอนต์นี้รองรับ Variable Fonts</h4>
+      <div class="alert alert-info mt-3" role="alert">
+        <h5 class="alert-heading">ฟอนต์นี้รองรับ Variable Fonts</h5>
         <p class="mb-0">
           หากต้องการใช้งานฟอนต์แบบปกติ เลือกชนิดฟอนต์ด้านล่างเป็น Static
         </p>
       </div>
     {{ end }}
-    {{ partial "font/font-preview.html" . }}
-    <h2 class="mt-4">การใช้งาน</h2>
     <p>
       โค้ดพร้อมใช้งาน สำหรับฟอนต์รูปแบบปกติ ทุกน้ำหนัก
       สามารถคัดลอกไปใช้งานได้ทันที เบราว์เซอร์จะโหลดเฉพาะไฟล์ที่ต้องใช้เท่านั้น

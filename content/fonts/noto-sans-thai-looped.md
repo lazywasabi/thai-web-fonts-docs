@@ -25,3 +25,21 @@ font:
       min: 62.5
       max: 100
 ---
+
+<div class="alert alert-success mt-3" role="alert">
+  <h5 class="alert-heading">ฟอนต์อัปเดตใหม่</h5>
+  <p class="mb-0">
+    ฟอนต์นี้มีการปรับรูปลักษณ์ฟอนต์ใหม่ในอัปเดตล่าสุด <a class="alert-link" data-bs-toggle="collapse" href="#collapseNotoLooped" aria-expanded="false" aria-controls="collapseNotoLooped">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <div class="collapse mt-2" id="collapseNotoLooped">
+    <div class="card card-body">
+      <p>
+        ฟอนต์ Noto Sans Thai Looped เพิ่มการรองรับ Variable Fonts และมีการปรับรูปลักษณ์ฟอนต์ใหม่
+      </p>
+      <p>
+        ดูการเปรียบเทียบฟอนต์เวอร์ชันใหม่ (บน) และเก่า (ล่าง) ได้ด้านล่างนี้ หากต้องการใช้เวอร์ชันเก่า สามารถ<a href="/docs/versioning/">กำหนดเลขเวอร์ชัน</a>ใน URL เป็น<a href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/NotoSansThaiLooped/" target="_blank" rel="noopener noreferrer">เวอร์ชัน 7.3.0</a> โปรดทราบว่าเวอร์ชันเก่าไม่รองรับ Variable Fonts
+      </p>
+      {{< noto-sans-thai-looped-compare >}}
+    </div>
+  </div>
+</div>

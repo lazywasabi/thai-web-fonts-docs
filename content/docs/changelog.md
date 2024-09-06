@@ -19,6 +19,7 @@ menu:
 **เปรียบเทียบฟอนต์ Noto Sans Thai Looped** เวอร์ชันใหม่ (บน) และเก่า (ล่าง) หากต้องการใช้เวอร์ชันเก่า สามารถ[กำหนดเลขเวอร์ชัน](/docs/versioning/)ใน URL เป็น[เวอร์ชัน 7.3.0](https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7.3.0/fonts/NotoSansThaiLooped/)
 
 {{< noto-sans-thai-looped-compare >}}
+<div class="mb-4"></div>
 
 ## v7.3.0
 
