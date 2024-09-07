@@ -10,14 +10,14 @@
             <input class="form-control search-input" type="search" placeholder="ค้นหาฟอนต์..." autocomplete="off" size="32" aria-label="ค้นหาฟอนต์">
           </div>
           <div class="col d-flex flex-wrap gap-1 align-items-center">
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="" onclick="event.preventDefault();searchFonts('')">ฟอนต์ทั้งหมด</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=tag:มีหัว" onclick="event.preventDefault();searchFonts('tag:มีหัว')">มีหัว</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=tag:ไม่มีหัว" onclick="event.preventDefault();searchFonts('tag:ไม่มีหัว')">ไม่มีหัว</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:variable" onclick="event.preventDefault();searchFonts('type:variable')">Variable Fonts</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:sans-serif" onclick="event.preventDefault();searchFonts('type:sans-serif')">Sans-Serif</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:serif" onclick="event.preventDefault();searchFonts('type:serif')">Serif</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:cursive" onclick="event.preventDefault();searchFonts('type:cursive')">Cursive</a>
-            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:monospace" onclick="event.preventDefault();searchFonts('type:monospace')">Monospace</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="" onclick="event.preventDefault();searchFonts('')">ฟอนต์ทั้งหมด</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:มีหัว" onclick="event.preventDefault();searchFonts('tag:มีหัว')">มีหัว</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:ไม่มีหัว" onclick="event.preventDefault();searchFonts('tag:ไม่มีหัว')">ไม่มีหัว</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:variable" onclick="event.preventDefault();searchFonts('tag:variable')">Variable Fonts</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:sans-serif" onclick="event.preventDefault();searchFonts('tag:sans-serif')">Sans-Serif</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:serif" onclick="event.preventDefault();searchFonts('tag:serif')">Serif</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:cursive" onclick="event.preventDefault();searchFonts('tag:cursive')">Cursive</a>
+            <a class="btn btn-sm text-secondary border-secondary rounded-pill" role="button" href="?q=tag:monospace" onclick="event.preventDefault();searchFonts('tag:monospace')">Monospace</a>
           </div>
         </div>
       </form>
@@ -29,7 +29,7 @@
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
     >
       {{ range .Pages }}
-        <div class="col font-list-item" data-tag="{{ .Params.font.title }} {{ .Params.font.titleThai }} type:{{ .Params.font.type }}{{ with .Params.font.variable }} type:variable{{ end }}{{ range .Params.tags }} tag:{{ . }}{{ end }}">
+        <div class="col font-list-item" data-tag="{{ .Params.font.title }} {{ .Params.font.titleThai }} tag:{{ .Params.font.type }}{{ with .Params.font.variable }} tag:variable{{ end }}{{ range .Params.tags }} tag:{{ . }}{{ end }}">
           <div class="card" id="{{ .Title | urlize }}">
             <a class="text-decoration-none" href="{{ .RelPermalink }}">
               <div class="card-body">
@@ -41,12 +41,12 @@
                   {{ if .Params.font.variable }}
                     <span
                       class="badge text-bg-secondary py-1"
-                      title="Variable fonts"
+                      title="Variable Fonts"
                       >VF</span
                     >
                   {{ end }}
                   {{ with .Params.badge }}
-                    <span class="badge {{ .class }} py-1" title="Variable fonts"
+                    <span class="badge {{ .class }} py-1"
                       >{{ .text }}</span
                     >
                   {{ end }}
@@ -58,9 +58,10 @@
         {{ partial "font/font-face-preview.html" . }}
       {{ end }}
     </div>
-    <div class="card no-result d-none text-center">
+    <div class="card no-result d-none text-center mt-4">
       <div class="card-body">
         <h2 class="card-title text-body h4 mb-3">ไม่พบฟอนต์</h2>
+        <p>ค้นหาโดยป้อนชื่อฟอนต์ลงในช่องค้นหา หรือใช้ตัวกรองด้านบน</p>
         <button type="button" class="btn btn-outline-secondary" onclick="searchFonts('')">ดูฟอนต์ทั้งหมด</button>
       </div>
     </div>
