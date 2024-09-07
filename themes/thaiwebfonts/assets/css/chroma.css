@@ -27,7 +27,7 @@
   --base0F: #333;
 }
 
-html.dark .chroma {
+[data-bs-theme=dark] .chroma {
   --pre-code-color: #d4d4d4;
   --pre-bg: rgb(0 0 0 / 50%);
   --hl-background: rgb(4 120 87 / 25%);

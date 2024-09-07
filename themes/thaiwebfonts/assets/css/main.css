@@ -28,7 +28,7 @@ body {
 }
 
 .highlight {
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-tertiary-bg);
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
   border-radius: var(--bs-border-radius);
   margin-bottom: 1rem;
@@ -37,6 +37,13 @@ body {
 .chroma {
   padding: 1.5rem 1rem;
   margin: 0;
+}
+
+.bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  fill: currentcolor;
 }
 
 .btn-clipboard {
@@ -55,10 +62,6 @@ body {
 .btn-clipboard.btn-success {
   --bs-btn-bg: var(--bs-success);
   --bs-btn-color: var(--bs-btn-active-color);
-}
-
-.twf-header {
-  background-color: #cfe2ff;
 }
 
 .navbar-toggler[data-bs-target='#offcanvasNavbar'] .navbar-toggler-icon {
@@ -103,7 +106,7 @@ body {
 }
 
 .twf-sidebar-menu .nav {
-  --bs-nav-link-color: var(--bs-secondary);
+  --bs-nav-link-color: var(--bs-secondary-color);
   --bs-nav-link-padding-y: 0.25rem;
   --bs-nav-link-padding-x: 0.5rem;
 }
@@ -118,6 +121,10 @@ body {
 }
 
 @media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+  }
+
   .twf-docs-toc {
     --bs-accordion-border-width: 0;
 
