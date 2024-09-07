@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: Noto Sans Thai
-  titleThai: โนโต ซานส์ ไทย
+  titleThai: โนโต แซนส์ ไทย
   namespace: NotoSansThai
   type: sans-serif
   author: Google

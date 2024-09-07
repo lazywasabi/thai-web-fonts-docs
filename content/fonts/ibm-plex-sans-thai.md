@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: IBM Plex Sans Thai
-  titleThai: ไอบีเอ็ม เพล็กซ์ ซานส์ ไทย
+  titleThai: ไอบีเอ็ม เพล็กซ์ แซนส์ ไทย
   namespace: IBMPlexSansThai
   type: sans-serif
   author: IBM

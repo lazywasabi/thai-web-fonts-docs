@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: LINE Seed Sans TH
-  titleThai: ไลน์ ซีด
+  titleThai: ไลน์ ซี้ด แซนส์ ไทย
   namespace: LINESeedSansTH
   type: sans-serif
   author: LINE Corp.

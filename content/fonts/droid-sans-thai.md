@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: Droid Sans Thai
-  titleThai: ดรอยด์ ซานส์ ไทย
+  titleThai: ดรอยด์ แซนส์ ไทย
   namespace: DroidSansThai
   type: sans-serif
   author: Google

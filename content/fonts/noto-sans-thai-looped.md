@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: Noto Sans Thai Looped
-  titleThai: โนโต ซานส์ ไทย ลูป
+  titleThai: โนโต แซนส์ ไทย ลูป
   namespace: NotoSansThaiLooped
   type: sans-serif
   author: Google
