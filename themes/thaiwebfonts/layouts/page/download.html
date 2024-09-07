@@ -13,20 +13,25 @@
     </div>
   </article>
   <script>
-    const title = document.querySelector("h1");
-    const fileName = document.querySelector(".file-name");
-    const url = new URL(window.location)
-    const downloadFont = url.searchParams.get("font");
-    const downloadURL = "/dl/" + downloadFont + ".zip"
-    const downloadLink = document.querySelector(".download-link");
+    function downloadFont() {
+      const title = document.querySelector("h1");
+      const fileName = document.querySelector(".file-name");
+      const url = new URL(window.location)
+      const downloadFont = window.location.pathname.split("/").pop() || url.searchParams.get("font");
+      const downloadURL = "/dl/" + downloadFont + ".zip"
+      const downloadLink = document.querySelector(".download-link");
 
-    if (downloadFont) {
       title.innerText = "ดาวน์โหลดไฟล์ " + downloadFont + ".zip";
       downloadLink.setAttribute("href", downloadURL);
 
       window.setTimeout(function(){
-        window.location.href = downloadURL;
+        if (url.searchParams.get("redirect") === '0') {
+          return; 
+        } else {
+          window.location.href = downloadURL;
+        }
       }, 2000);
     }
+    downloadFont();
   </script>
 {{ end }}

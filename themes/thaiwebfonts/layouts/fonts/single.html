@@ -18,8 +18,12 @@
           class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-1"
           href="{{- with $font.download -}}
             {{- . -}}
-          {{- else }}
-            /download/?font={{- $font.namespace -}}
+          {{- else -}}
+            {{- if hugo.IsServer -}}
+              /download/?font={{- $font.namespace -}}&redirect=0
+            {{- else -}}
+              /download/fonts/{{- $font.namespace -}}
+            {{- end -}}
           {{- end -}}"
           target="_blank" rel="noreferrer"
           role="button"
