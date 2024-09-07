@@ -46,17 +46,30 @@ body {
   fill: currentcolor;
 }
 
+.btn-subtle {
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: var(--bs-secondary-bg);
+  --bs-btn-border-color: var(--bs-secondary-bg);
+  --bs-btn-hover-color: var(--bs-body-color);
+  --bs-btn-hover-bg: var(--bs-dark-bg-subtle);
+  --bs-btn-hover-border-color: var(--bs-dark-bg-subtle);
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: var(--bs-body-color);
+  --bs-btn-active-bg: var(--bs-dark-bg-subtle);
+  --bs-btn-active-border-color: var(--bs-dark-bg-subtle);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
 .btn-clipboard {
   --bs-btn-color: var(--bs-body-color);
-  --bs-btn-bg: var(--bs-gray-300);
-  --bs-btn-border-color: var(--bs-gray-300);
+  --bs-btn-bg: var(--bs-dark-bg-subtle);
+  --bs-btn-border-color: var(--bs-border-color);
   --bs-btn-border-radius: 0 var(--bs-border-radius) 0 var(--bs-border-radius);
   --bs-btn-padding-y: 0;
   --bs-btn-padding-x: 0.4rem;
   --bs-btn-font-size: 0.75rem;
 
   font-family: system-ui, sans-serif;
-  border-width: 0 0 var(--bs-border-width) var(--bs-border-width);
 }
 
 .btn-clipboard.btn-success {
@@ -158,4 +171,19 @@ body {
 
 .twf-font-snippets-variable .tab-content .tab-pane:first-child .highlight {
   border-radius: var(--bs-border-radius);
+}
+
+/* Dark Theme */
+[data-bs-theme=dark] .accordion-button::after {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dee2e6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dee2e6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+[data-bs-theme=dark] .navbar-toggler[data-bs-target='#offcanvasNavbar'] .navbar-toggler-icon {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+[data-bs-theme=dark] .btn-outline-secondary {
+  --bs-btn-color: var(--bs-secondary-color);
+  --bs-btn-border-color: var(--bs-secondary-color);
 }
