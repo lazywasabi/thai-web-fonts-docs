@@ -8,13 +8,13 @@
       {{ $show := $currentPage.HasMenuCurrent "sidebar" . }}
       <div class="accordion-item border-0">
         <div
-          class="accordion-header position-sticky d-flex align-items-center top-0 bg-white"
+          class="accordion-header position-sticky d-flex align-items-center top-0 bg-body"
           id="heading-{{ .Identifier }}"
         >
           {{- if .URL }}
             <a
               class="twf-sidebar-menu-parent-link flex-fill border-end fs-6 text-decoration-none {{ if $show }}
-                text-primary
+                text-primary-color
               {{ else }}
                 collapsed text-reset
               {{ end }}"
@@ -23,7 +23,7 @@
             >
             <button
               class="accordion-button {{ if $show -}}
-                text-primary
+                text-primary-color
               {{ else }}
                 collapsed text-reset
               {{- end }} w-auto"
@@ -36,7 +36,7 @@
           {{- else -}}
             <button
               class="accordion-button {{ if $show }}
-                text-primary
+                text-primary-color
               {{ else }}
                 collapsed text-reset
               {{ end }}"
