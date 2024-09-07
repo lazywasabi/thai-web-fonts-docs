@@ -26,6 +26,9 @@ font:
       max: 100
 tags:
 - มีหัว
+badge:
+  text: อัปเดต
+  class: text-bg-success
 ---
 
 <div class="alert alert-success mt-3" role="alert">
