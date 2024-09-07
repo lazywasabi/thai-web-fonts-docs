@@ -1,23 +1,35 @@
 {{ define "main" }}
   <div>
-    <div class="row justify-content-between align-items-center">
-      <div class="col">
-        <h1>{{ .Title }}</h1>
-      </div>
-      <div class="col col-sm-4 col-md-3 col-xl-2">
-        <form class="search-form" method="dialog">
-          <input class="form-control search-input" type="search" placeholder="ค้นหาฟอนต์" autocomplete="off" size="32" aria-label="ค้นหาฟอนต์">
-        </form>
-      </div>
+    <div>
+      <h1>{{ .Title }}</h1>
+    </div>
+    <div class="mt-4">
+      <form class="search-form">
+        <div class="row g-2">
+          <div class="col-12 col-xl-3 col-xxl-2">
+            <input class="form-control search-input" type="search" placeholder="ค้นหาฟอนต์..." autocomplete="off" size="32" aria-label="ค้นหาฟอนต์">
+          </div>
+          <div class="col d-flex flex-wrap gap-1 align-items-center">
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="" onclick="event.preventDefault();searchFonts('')">ฟอนต์ทั้งหมด</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=tag:มีหัว" onclick="event.preventDefault();searchFonts('tag:มีหัว')">มีหัว</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=tag:ไม่มีหัว" onclick="event.preventDefault();searchFonts('tag:ไม่มีหัว')">ไม่มีหัว</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:variable" onclick="event.preventDefault();searchFonts('type:variable')">Variable Fonts</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:sans-serif" onclick="event.preventDefault();searchFonts('type:sans-serif')">Sans-Serif</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:serif" onclick="event.preventDefault();searchFonts('type:serif')">Serif</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:cursive" onclick="event.preventDefault();searchFonts('type:cursive')">Cursive</a>
+            <a class="btn btn-sm border-secondary rounded-pill" role="button" href="?q=type:monospace" onclick="event.preventDefault();searchFonts('type:monospace')">Monospace</a>
+          </div>
+        </div>
+      </form>
     </div>
     <div class="font-list-preview-alert alert alert-primary mt-3 mb-0 d-none" role="alert" onclick="loadPreviewFonts()" style="cursor: pointer;">
-      คลิกที่นี่เพื่อเปิดการแสดงตัวอย่างฟอนต์ (ใช้พื้นที่ประมาณ 3 MB)
+      คลิกที่นี่เพื่อเปิดการแสดงตัวอย่างฟอนต์ในหน้านี้ (ใช้ข้อมูลประมาณ 3 MB)
     </div>
     <div
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
     >
       {{ range .Pages }}
-        <div class="col font-list-item" data-tag="{{ .Params.font.title }} {{ .Params.font.titleThai }} type:{{ .Params.font.type }} {{ with .Params.font.variable }}variable{{ end }}">
+        <div class="col font-list-item" data-tag="{{ .Params.font.title }} {{ .Params.font.titleThai }} type:{{ .Params.font.type }}{{ with .Params.font.variable }} type:variable{{ end }}{{ range .Params.tags }} tag:{{ . }}{{ end }}">
           <div class="card" id="{{ .Title | urlize }}">
             <a class="text-decoration-none" href="{{ .RelPermalink }}">
               <div class="card-body">
