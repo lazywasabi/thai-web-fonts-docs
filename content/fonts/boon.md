@@ -17,6 +17,8 @@ font:
   previewFile: OTF/Boon-Regular.otf
   weight:
     weight: [300, 400, 500, 600, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

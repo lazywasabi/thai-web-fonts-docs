@@ -17,6 +17,8 @@ font:
   previewFile: TTF/K2D-Regular.ttf
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700, 800]
+tags:
+- มีหัว
 ---
 
 <div></div>

@@ -16,6 +16,8 @@ font:
   previewFile: OTF/ChulabhornLikitText-Regular.otf
   weight:
     weight: [300, 400, 500, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

@@ -17,4 +17,6 @@ font:
   previewFile: OTF/Sawasdee-Regular.otf
   weight:
     weight: [400, 700]
+tags:
+- ไม่มีหัว
 ---

@@ -17,6 +17,8 @@ font:
   previewFile: TTF/Sriracha-Regular.ttf
   weight:
     weight: [400]
+tags:
+- ไม่มีหัว
 ---
 
 <div></div>

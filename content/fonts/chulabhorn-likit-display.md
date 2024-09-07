@@ -17,6 +17,8 @@ font:
   weight:
     weight: [500]
     default: 500
+tags:
+- มีหัว
 ---
 
 <div></div>

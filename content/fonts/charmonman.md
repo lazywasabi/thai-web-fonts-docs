@@ -17,6 +17,8 @@ font:
   previewFile: TTF/Charmonman-Regular.ttf
   weight:
     weight: [400, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

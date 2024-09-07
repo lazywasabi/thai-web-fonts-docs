@@ -17,6 +17,8 @@ font:
   previewFile: TTF/Mitr-Regular.ttf
   weight:
     weight: [200, 300, 400, 500, 600, 700]
+tags:
+- ไม่มีหัว
 ---
 
 <div></div>

@@ -15,6 +15,8 @@ font:
   previewFile: TTF/DroidSansThai-Regular.ttf
   weight:
     weight: [400, 700]
+tags:
+- มีหัว
 ---
 
 <div class="alert alert-warning mt-3" role="alert">

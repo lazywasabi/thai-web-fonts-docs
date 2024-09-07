@@ -17,6 +17,8 @@ font:
   previewFile: OTF/Garuda-Regular.otf
   weight:
     weight: [400, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

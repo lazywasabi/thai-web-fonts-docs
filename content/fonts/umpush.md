@@ -17,6 +17,8 @@ font:
   previewFile: OTF/Umpush-Regular.otf
   weight:
     weight: [300, 400, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

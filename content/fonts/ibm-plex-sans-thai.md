@@ -16,6 +16,8 @@ font:
   previewFile: OTF/IBMPlexSansThai-Regular.otf
   weight:
     weight: [100, 200, 300, 400, 500, 600, 700]
+tags:
+- ไม่มีหัว
 ---
 
 <div></div>

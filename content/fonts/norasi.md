@@ -17,4 +17,6 @@ font:
   previewFile: OTF/Norasi-Regular.otf
   weight:
     weight: [400, 700]
+tags:
+- มีหัว
 ---

@@ -17,6 +17,8 @@ font:
   previewFile: TTF/Pridi-Regular.ttf
   weight:
     weight: [200, 300, 400, 500, 600, 700]
+tags:
+- มีหัว
 ---
 
 <div></div>

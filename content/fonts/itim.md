@@ -17,6 +17,8 @@ font:
   previewFile: OTF/Itim-Regular.otf
   weight:
     weight: [400]
+tags:
+- มีหัว
 ---
 
 <div></div>
