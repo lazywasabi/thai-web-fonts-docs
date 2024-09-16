@@ -6,7 +6,7 @@ menu:
     parent: fonts
 font:
   title: Sarabun
-  titleThai: สารบัญ
+  titleThai: สารบรรณ
   namespace: Sarabun
   type: sans-serif
   author: คัดสรร ดีมาก
