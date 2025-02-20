@@ -7,6 +7,10 @@ menu:
     parent: docs
 ---
 
+## v7.5.0
+
+- อัปเดตฟอนต์ [Noto Sans Thai Looped](/fonts/noto-sans-thai-looped/) เป็น [v2.000](https://github.com/notofonts/thai/releases/tag/NotoSansThaiLooped-v2.000)
+
 ## v7.4.0
 
 - อัปเดตฟอนต์ [Anuphan](/fonts/anuphan/) เป็นเวอร์ชันใหม่จาก [commit ล่าสุด](https://github.com/cadsondemak/Anuphan/commit/a8ee8448324cc13fb69d585c4f6da4994f7652b0)
