@@ -22,9 +22,6 @@
         </div>
       </form>
     </div>
-    <div class="font-list-preview-alert alert alert-primary mt-3 mb-0 d-none" role="alert" onclick="loadPreviewFonts()" style="cursor: pointer;">
-      คลิกที่นี่เพื่อเปิดการแสดงตัวอย่างฟอนต์ในหน้านี้ (ใช้ข้อมูลประมาณ 3 MB)
-    </div>
     <div
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
     >
@@ -33,7 +30,7 @@
           <div class="card" id="{{ .Title | urlize }}">
             <a class="text-decoration-none" href="{{ .RelPermalink }}">
               <div class="card-body">
-                <div class="mb-3 font-list-preview d-none" data-style="font-family: '{{ .Params.font.title }}';">
+                <div class="mb-3 font-list-preview" style="font-family: '{{ .Params.font.title }}';">
                   <p class="fs-1 text-truncate m-0 text-body">{{ .Params.font.titleThai }}</p>
                 </div>
                 <h2 class="card-title text-body text-truncate h6 lh-base m-0">

@@ -121,24 +121,3 @@ if (editor) {
     }
   }
 }
-
-/* Font list preview */
-const previewAlert = document.querySelector(".font-list-preview-alert");
-
-function loadPreviewFonts() {
-  const previewText = document.querySelectorAll(".font-list-preview");
-  localStorage.setItem("list-preview", "1");
-  previewAlert.classList.add("d-none");
-  previewText.forEach(function(item) {
-    item.setAttribute("style", item.dataset.style);
-    item.classList.remove("d-none");
-  });
-}
-
-if (previewAlert) {
-  if (localStorage.getItem("list-preview") === "1") {
-    loadPreviewFonts();
-  } else {
-    previewAlert.classList.remove("d-none");
-  }
-}
