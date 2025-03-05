@@ -16,17 +16,12 @@
       <div class="col-12 col-sm-auto">
         <a
           class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-1"
-          href="{{- with $font.download -}}
-            {{- . -}}
-          {{- else -}}
-            {{- if hugo.IsServer -}}
-              /download/?font={{- $font.namespace -}}&redirect=0
-            {{- else -}}
-              /download/fonts/{{- $font.namespace -}}
-            {{- end -}}
-          {{- end -}}"
+          {{- with $font.download -}}
+          href="{{- . -}}"
           target="_blank" rel="noreferrer"
+          {{- end -}}
           role="button"
+          data-bs-toggle="modal" data-bs-target="#downloadModal"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,4 +81,7 @@
     {{ partial "font/font-file-list.html" . }}
     {{ partial "font/font-data.html" . }}
   </article>
+
+  {{ partial "font/download-modal.html" . }}
+  
 {{ end }}

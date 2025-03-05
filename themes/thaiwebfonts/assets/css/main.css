@@ -84,7 +84,7 @@ body {
 .twf-sidebar {
   position: sticky;
   top: var(--header-height);
-  z-index: 1200;
+  z-index: 1045;
 }
 
 .twf-sidebar .offcanvas-body {

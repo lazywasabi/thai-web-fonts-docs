@@ -4,14 +4,19 @@
 
 {{ define "main" }}
   <article class="text-break">
-    <h1 class="h2">{{ .Title }}</h1>
+    <h1 class="h2 fs-3">{{ .Title }}</h1>
     <div class="mt-3">
-      <p class="fs-5">การดาวน์โหลดของคุณจะเริ่มในไม่ช้า หากไม่มีอะไรเกิดขึ้น<a class="download-link" href="#">คลิกที่นี่</a></p>
-      <p class="fs-5 mt-4 align-items-baseline d-flex gap-2">
-        ดาวน์โหลดเสร็จแล้ว? <a class="link-danger" href="#" onclick="window.close();">ปิดหน้านี้</a>
-      </p>
+      <p>หากไม่มีอะไรเกิดขึ้น<a class="download-link" href="#">คลิกที่นี่</a></p>
     </div>
   </article>
+  <style>
+    body {
+      padding: 0;
+    }
+    .twf-header {
+      display: none;
+    }
+  </style>
   <script>
     function downloadFont() {
       const title = document.querySelector("h1");
@@ -21,7 +26,7 @@
       const downloadURL = "/dl/" + downloadFont + ".zip"
       const downloadLink = document.querySelector(".download-link");
 
-      title.innerText = "ดาวน์โหลดไฟล์ " + downloadFont + ".zip";
+      title.innerText = "กำลังดาวน์โหลดไฟล์ " + downloadFont + ".zip";
       downloadLink.setAttribute("href", downloadURL);
 
       window.setTimeout(function(){
@@ -30,7 +35,7 @@
         } else {
           window.location.href = downloadURL;
         }
-      }, 2000);
+      }, 1500);
     }
     downloadFont();
   </script>

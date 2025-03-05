@@ -3,7 +3,8 @@
 {{- $codeCopy := resources.Get "js/code-copy.js" -}}
 {{- $fontPreview := resources.Get "js/font-preview.js" -}}
 {{- $fontSearch := resources.Get "js/font-search.js" -}}
-{{- $bundleJS := slice $darkMode $sidebar $codeCopy $fontPreview $fontSearch | resources.Concat "js/main.bundle.js" | minify -}}
+{{- $fontDownload := resources.Get "js/font-download.js" -}}
+{{- $bundleJS := slice $darkMode $sidebar $codeCopy $fontPreview $fontSearch $fontDownload | resources.Concat "js/main.bundle.js" | minify -}}
 
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

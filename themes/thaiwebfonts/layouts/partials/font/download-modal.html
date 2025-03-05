@@ -1,0 +1,23 @@
+<div class="modal fade" id="downloadModal" tabindex="-1" aria-label="ดาวน์โหลดฟอนต์ {{ .Title }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe
+          id="downloadFrame"
+          width="100%"
+          height="160"
+          frameborder="0"
+          {{ if hugo.IsServer -}}
+          data-src="/download/?font={{ .Params.font.namespace }}&redirect=0"
+          {{- else -}}
+          data-src="/download/fonts/{{ .Params.font.namespace }}"
+          {{- end }}
+        ></iframe>
+      </div>
+      <div class="modal-footer">
+        ดาวน์โหลดเสร็จแล้ว?
+        <button type="button" class="btn btn-danger ms-2" data-bs-dismiss="modal">ปิดหน้าต่างนี้</button>
+      </div>
+    </div>
+  </div>
+</div>

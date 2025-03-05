@@ -64,7 +64,6 @@ if (editor) {
     const randomText = Math.floor(Math.random() * previewText.length);
     editor.value = previewText[randomText];
     autoResize();
-    console.log('random!');
   }
 
   randomPreview();
