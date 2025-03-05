@@ -47,23 +47,33 @@ if (editor) {
     'เมืองงามสามวัฒนธรรม ศูนย์ฮาลาลเลิศล้ำ ชนน้อมนำศรัทธา ถิ่นธรรมชาติงามตา ปัตตานีสันติสุขแดนใต้',
   ];
 
+  
+  function autoResize() {
+    editor.style.height = "auto";
+    const maxHeight = window.innerHeight * 0.75;
+    if (editor.scrollHeight > maxHeight) {
+      editor.style.height = maxHeight + "px";
+      editor.style.overflowY = "auto";
+    } else {
+      editor.style.height = editor.scrollHeight + "px";
+      editor.style.overflowY = "hidden";
+    }
+  }
+
   function randomPreview() {
     const randomText = Math.floor(Math.random() * previewText.length);
-    editor.innerHTML = previewText[randomText];
+    editor.value = previewText[randomText];
+    autoResize();
+    console.log('random!');
   }
 
   randomPreview();
-
-  editor.addEventListener('paste', (e) => {
-    e.preventDefault();
-    const text = e.clipboardData.getData('text/plain');
-    document.execCommand('insertHTML', false, text);
-  });
 
   function setSize(val) {
     document.getElementById('previewSize').value = val;
     document.getElementById('previewSizeValue').textContent = val;
     editor.style.fontSize = val + 'px';
+    autoResize();
   }
 
   function setDefaultSize() {
@@ -85,6 +95,7 @@ if (editor) {
     const previewWidth = document.getElementById('previewWidth');
     const previewWidthValue = document.getElementById('previewWidthValue');
     editor.style.fontStretch = val + '%';
+    autoResize();
     if (isVariable && previewWidth) {
       previewWidth.value = val;
       previewWidthValue.textContent = val;
@@ -100,6 +111,7 @@ if (editor) {
     const defaultWeight = dropdown.dataset.defaultWeight;
     if (val === 'default') {
       editor.style.fontWeight = defaultWeight;
+      autoResize();
       if (isVariable) {
         previewWeightValue.textContent = defaultWeight;
         previewWeight.value = defaultWeight;
@@ -112,6 +124,7 @@ if (editor) {
       }
     } else {
       editor.style.fontWeight = val;
+      autoResize();
       if (isVariable) {
         previewWeightValue.textContent = val;
         previewWeight.value = val;

@@ -152,8 +152,10 @@ body {
 }
 
 .font-preview-content {
+  min-height: 100%;
   max-height: 75vh;
-  overflow: auto;
+  overflow-y: hidden;
+  resize: none;
 }
 
 .font-preview-content:focus {

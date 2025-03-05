@@ -266,14 +266,15 @@
     {{ end }}
   </div>
   <div class="col">
-    <div
-      class="font-preview-content h-100 bg-secondary rounded border bg-opacity-10 p-3"
+    <textarea
+      class="font-preview-content w-100 bg-secondary rounded border bg-opacity-10 p-3"
       style="font-size: 28px;"
-      contenteditable=""
-      spellcheck="false"
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="off"
+      oninput="autoResize()"
     >
-      กรุงเทพฯ ดุจเทพสร้าง เมืองศูนย์กลางการปกครอง วัดวังงามเรืองรอง
-      เมืองหลวงของประเทศไทย
-    </div>
+      กรุงเทพฯ ดุจเทพสร้าง เมืองศูนย์กลางการปกครอง วัดวังงามเรืองรอง เมืองหลวงของประเทศไทย
+    </textarea>
   </div>
 </div>
