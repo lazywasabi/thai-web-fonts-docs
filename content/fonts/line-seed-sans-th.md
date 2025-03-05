@@ -9,7 +9,7 @@ font:
   titleThai: ไลน์ ซี้ด แซนส์ ไทย
   namespace: LINESeedSansTH
   type: sans-serif
-  author: LINE Corp.
+  author: LY Corp.
   thaifaces: https://thaifaces.com/specimen/line-seed-sans-th/
   website: https://seed.line.me/index_th.html
   license: '[SIL Open Font License, version 1.1](https://github.com/lazywasabi/thai-web-fonts/blob/main/fonts/LINESeedSansTH/LICENSE.txt)'
