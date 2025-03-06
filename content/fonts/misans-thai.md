@@ -18,24 +18,35 @@ font:
   previewFile: /files/MiSansThaiVF.woff2
   weight:
     weight: [150, 200, 250, 305, 330, 380, 450, 520, 630, 700]
+    default: 330
   variable:
     weight:
       min: 150
       max: 700
+contentPlacement: usage
 tags:
 - ไม่มีหัว
 ---
 
-<div class="alert alert-info mt-3" role="alert">
-  <h5 class="alert-heading">การใช้งานฟอนต์ MiSans Thai</h5>
-    <ul class="mb-0">
-      <li>ฟอนต์ MiSans Thai อนุญาตให้ใช้งานเชิงพาณิชย์ได้ฟรี (<a href="https://hyperos.mi.com/font/en/faq/" class="alert-link fw-normal" target="_blank" rel="noopener noreferrer">ดูคำถามที่พบบ่อย</a>)</li>
-      <li>เนื่องด้วยสัญญาอนุญาตของฟอนต์ MiSans Thai ไม่อนุญาตให้เผยแพร่ฟอนต์ได้ ฟอนต์นี้จึงไม่อยู่บน GitHub ของ Thai Web Fonts และไม่สามารถใช้งานผ่าน CDN ของ jsDelivr ได้เหมือนฟอนต์อื่น ๆ</li>
-      <li>หากต้องการใช้งานฟอนต์นี้ กรุณาดาวน์โหลดฟอนต์จากเว็บไซต์ของ Xiaomi โดยคลิกปุ่มดาวน์โหลดด้านล่างนี้</li>
-      <li>ฟอนต์นี้รองรับเฉพาะตัวอักษรไทย หากต้องการใช้ตัวอักษรละติน แนะนำให้ใช้คู่กับ<a href="https://hyperos.mi.com/font/en/details/latin/" class="alert-link fw-normal" target="_blank" rel="noopener noreferrer">ฟอนต์ MiSans Latin</a></li>
-      <li>ฟอนต์นี้รองรับ Variable Fonts ปรับน้ำหนัก (weight) ได้ระหว่าง 150 - 700</li>
-    </ul>
-</div>
+## การใช้งาน
+{class="mt-4"}
+
+* หากต้องการใช้งานฟอนต์นี้ ดาวน์โหลดฟอนต์โดยตรงจากเว็บไซต์ของ Xiaomi โดยคลิกปุ่มดาวน์โหลดด้านบน
+* สัญญาอนุญาตของฟอนต์ MiSans Thai ไม่อนุญาตให้เผยแพร่ไฟล์ฟอนต์ได้ ฟอนต์นี้จึงไม่อยู่ใน Thai Web Fonts บน GitHub และไม่มี CDN ให้ใช้งานเหมือนฟอนต์อื่น ๆ
+* ฟอนต์ MiSans Thai อนุญาตให้ใช้งานเชิงพาณิชย์ได้ฟรี [ดูคำถามที่พบบ่อย](https://hyperos.mi.com/font/en/faq/) หรืออ่านสัญญาอนุญาตฉบับเต็มได้ที่ลิงก์ด้านล่าง
+* ฟอนต์นี้รองรับเฉพาะตัวอักษรไทย หากต้องการใช้ตัวอักษรละติน แนะนำให้ใช้คู่กับ[ฟอนต์ MiSans Latin](https://hyperos.mi.com/font/en/details/latin/)
+* ฟอนต์นี้รองรับ Variable Fonts ปรับน้ำหนัก (weight) ได้ระหว่าง 150 - 700
+* การกำหนดน้ำหนักฟอนต์จะไม่เหมือนฟอนต์อื่น ๆ โดยมีรายชื่อน้ำหนักดังนี้
+  * 150: Thin
+  * 200: ExtraLight
+  * 250: Light
+  * 305: Normal
+  * 330: Regular
+  * 380: Medium
+  * 450: DemiBold
+  * 520: SemiBold
+  * 630: Bold
+  * 700: Heavy
 
 <style>
 @font-face {
@@ -59,8 +70,37 @@ tags:
 }
 
 .twf-font-single-download-links .col-6,
-.twf-font-preview-settings-weight-dropdown,
 .twf-font-single-usage {
   display: none;
 }
 </style>
+
+<script>
+  
+  const miSansWeightDropdown = document.querySelectorAll(".twf-font-preview-settings-weight-dropdown .dropdown-item");
+  const miSansWeightMap = {
+    150: "Thin",
+    200: "ExtraLight",
+    250: "Light",
+    305: "Normal",
+    330: "Regular",
+    380: "Medium",
+    450: "DemiBold",
+    520: "SemiBold",
+    630: "Bold",
+    700: "Heavy"
+  };
+
+  miSansWeightDropdown.forEach(button => {
+    const dataValue = parseInt(button.dataset.value);
+    if (miSansWeightMap[dataValue]) {
+      button.textContent = miSansWeightMap[dataValue] + " (" + dataValue + ")";
+    } else {
+      button.textContent = dataValue;
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    setWeight(330);
+  });
+</script>

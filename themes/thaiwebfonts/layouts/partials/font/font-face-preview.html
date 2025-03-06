@@ -39,7 +39,7 @@
       font-family: '{{- $font.title -}}';
       src: url('{{- $font.previewFile -}}') format('woff2');
       font-style: normal;
-      font-weight: 400;
+      font-weight: {{ with $font.weight.default -}}{{- . -}}{{- else -}}400{{- end }};
       font-display: swap;
     }
   </style>

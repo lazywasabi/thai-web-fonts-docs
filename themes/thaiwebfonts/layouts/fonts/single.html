@@ -11,7 +11,9 @@
         </div>
       {{- end -}}
     </div>
-    {{ .Content }}
+    {{ if not .Params.contentPlacement }}
+      {{ .Content }}
+    {{ end }}
     <div class="twf-font-single-download-links row g-2 mt-3">
       <div class="col-12 col-sm-auto">
         <a
@@ -65,6 +67,9 @@
       </div>
     </div>
     {{ partial "font/font-preview.html" . }}
+    {{ if eq .Params.contentPlacement "usage" }}
+      {{ .Content }}
+    {{ end }}
     <div class="twf-font-single-usage">
       <h2 class="mt-4">การใช้งาน</h2>
       {{ if $font.variable }}
