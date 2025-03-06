@@ -1,16 +1,18 @@
 {{ $font := .Params.font }}
 
 <style>
-  {{- if $font.variable }}
-    {{- if and $font.variable.weight $font.variable.width }}
-      {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") | safeCSS -}}
-    {{ else if $font.variable.weight }}
-      {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wght") | safeCSS -}}
-    {{ else if $font.variable.width }}
-      {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth") | safeCSS -}}
-    {{ end }}
-  {{ else }}
-    {{- partial "font/font-face.html" . | safeCSS -}}
+  {{- if not $font.external }}
+    {{- if $font.variable }}
+      {{- if and $font.variable.weight $font.variable.width }}
+        {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth,wght") | safeCSS -}}
+      {{ else if $font.variable.weight }}
+        {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wght") | safeCSS -}}
+      {{ else if $font.variable.width }}
+        {{- partial "font/font-face-var.html" (dict "Page" $ "font" $font "variable" "wdth") | safeCSS -}}
+      {{ end }}
+    {{ else }}
+      {{- partial "font/font-face.html" . | safeCSS -}}
+    {{ end -}}
   {{ end -}}
 
   .font-preview-content {

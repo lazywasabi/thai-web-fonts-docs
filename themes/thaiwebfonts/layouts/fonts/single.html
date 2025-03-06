@@ -12,16 +12,17 @@
       {{- end -}}
     </div>
     {{ .Content }}
-    <div class="row g-2 mt-3">
+    <div class="twf-font-single-download-links row g-2 mt-3">
       <div class="col-12 col-sm-auto">
         <a
           class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-1"
           {{- with $font.download -}}
           href="{{- . -}}"
           target="_blank" rel="noreferrer"
-          {{- end -}}
+          {{- else -}}
           role="button"
           data-bs-toggle="modal" data-bs-target="#downloadModal"
+          {{- end -}}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,21 +65,23 @@
       </div>
     </div>
     {{ partial "font/font-preview.html" . }}
-    <h2 class="mt-4">การใช้งาน</h2>
-    {{ if $font.variable }}
-      <div class="alert alert-info mt-3" role="alert">
-        <h5 class="alert-heading">ฟอนต์นี้รองรับ Variable Fonts</h5>
-        <p class="mb-0">
-          หากต้องการใช้งานฟอนต์แบบปกติ เลือกชนิดฟอนต์ด้านล่างเป็น Static
-        </p>
-      </div>
-    {{ end }}
-    <p>
-      โค้ดพร้อมใช้งาน สำหรับฟอนต์รูปแบบปกติ ทุกน้ำหนัก
-      สามารถคัดลอกไปใช้งานได้ทันที เบราว์เซอร์จะโหลดเฉพาะไฟล์ที่ต้องใช้เท่านั้น
-    </p>
-    {{ partial "font/font-code.html" . }}
-    {{ partial "font/font-file-list.html" . }}
+    <div class="twf-font-single-usage">
+      <h2 class="mt-4">การใช้งาน</h2>
+      {{ if $font.variable }}
+        <div class="alert alert-info mt-3" role="alert">
+          <h5 class="alert-heading">ฟอนต์นี้รองรับ Variable Fonts</h5>
+          <p class="mb-0">
+            หากต้องการใช้งานฟอนต์แบบปกติ เลือกชนิดฟอนต์ด้านล่างเป็น Static
+          </p>
+        </div>
+      {{ end }}
+      <p>
+        โค้ดพร้อมใช้งาน สำหรับฟอนต์รูปแบบปกติ ทุกน้ำหนัก
+        สามารถคัดลอกไปใช้งานได้ทันที เบราว์เซอร์จะโหลดเฉพาะไฟล์ที่ต้องใช้เท่านั้น
+      </p>
+      {{ partial "font/font-code.html" . }}
+      {{ partial "font/font-file-list.html" . }}
+    </div>
     {{ partial "font/font-data.html" . }}
   </article>
 

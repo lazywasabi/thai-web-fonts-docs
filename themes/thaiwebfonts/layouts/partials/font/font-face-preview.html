@@ -32,12 +32,25 @@
   {{- $weight = "Black" -}}
 {{- end }}
 
-<style>
-  @font-face {
-    font-family: '{{- $font.title -}}';
-    src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@{{- $.Site.Params.twfVersionMajor -}}/fonts/{{- $font.namespace -}}/{{- $font.namespace -}}-{{- $weight -}}.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-</style>
+
+{{- if $font.external -}}
+  <style>
+    @font-face {
+      font-family: '{{- $font.title -}}';
+      src: url('{{- $font.previewFile -}}') format('woff2');
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+  </style>
+{{- else -}}
+  <style>
+    @font-face {
+      font-family: '{{- $font.title -}}';
+      src: url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@{{- $.Site.Params.twfVersionMajor -}}/fonts/{{- $font.namespace -}}/{{- $font.namespace -}}-{{- $weight -}}.woff2') format('woff2');
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+  </style>
+{{- end -}}
