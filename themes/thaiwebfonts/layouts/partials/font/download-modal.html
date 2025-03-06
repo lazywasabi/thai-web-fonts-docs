@@ -2,17 +2,15 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-        <iframe
-          id="downloadFrame"
-          width="100%"
-          height="160"
-          frameborder="0"
+        <div
+          id="download-frame-container"
+          style="height: 150px;"
           {{ if hugo.IsServer -}}
           data-src="/download/?font={{ .Params.font.namespace }}&redirect=0"
           {{- else -}}
           data-src="/download/fonts/{{ .Params.font.namespace }}"
           {{- end }}
-        ></iframe>
+        ></div>
       </div>
       <div class="modal-footer">
         ดาวน์โหลดเสร็จแล้ว?
