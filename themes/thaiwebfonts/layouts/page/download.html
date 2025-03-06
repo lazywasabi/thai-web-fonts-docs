@@ -23,7 +23,7 @@
       const fileName = document.querySelector(".file-name");
       const url = new URL(window.location)
       const downloadFont = window.location.pathname.split("/").pop() || url.searchParams.get("font");
-      const downloadURL = "/dl/" + downloadFont + ".zip"
+      const downloadURL = "/files/" + downloadFont + ".zip"
       const downloadLink = document.querySelector(".download-link");
 
       title.innerText = "กำลังดาวน์โหลดไฟล์ " + downloadFont + ".zip";
