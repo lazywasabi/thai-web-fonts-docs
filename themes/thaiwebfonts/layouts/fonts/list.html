@@ -23,7 +23,7 @@
       </form>
     </div>
     <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
+      class="font-list row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 gy-4 mt-2"
     >
       {{ range .Pages }}
         <div class="col font-list-item" data-tag="{{ .Params.font.title }} {{ .Params.font.titleThai }} tag:{{ .Params.font.type }}{{ with .Params.font.variable }} tag:variable{{ end }}{{ range .Params.tags }} tag:{{ . }}{{ end }}">
