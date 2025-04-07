@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <article class="text-center">
-    <div>
+  <article>
+    <div class="text-center">
       <h1>รวมฟอนต์ภาษาไทย พร้อมใช้งานผ่าน CDN</h1>
       {{ .Content }}
     </div>
@@ -42,5 +42,6 @@
         <p>ทุกฟอนต์ใช้งานเชิงพาณิชย์ได้</p>
       </div>
     </div>
+    {{ partialCached "popular-fonts.html" . }}
   </article>
 {{ end }}
