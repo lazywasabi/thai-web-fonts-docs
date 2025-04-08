@@ -9,7 +9,6 @@
 
 :root {
   --bs-font-sans-serif: 'Noto Sans Thai Looped', system-ui, -apple-system,
-    'Segoe UI', roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
   --header-height: 66px;
@@ -25,6 +24,10 @@ img {
 
 body {
   padding-top: var(--header-height);
+}
+
+main {
+  min-height: calc(100vh - var(--header-height));
 }
 
 .highlight {
@@ -77,6 +80,10 @@ body {
   --bs-btn-color: var(--bs-btn-active-color);
 }
 
+.navbar {
+  --bs-navbar-brand-margin-end: 0;
+}
+
 .navbar-toggler[data-bs-target='#offcanvasNavbar'] .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(0, 0, 0, 0.55)' viewBox='0 0 16 16'%3E%3Cpath d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
 }
@@ -102,11 +109,16 @@ body {
   --bs-accordion-active-bg: transparent;
   --bs-accordion-btn-focus-box-shadow: unset;
   --bs-accordion-btn-padding-y: 0.75rem;
-  --bs-accordion-btn-padding-x: 0.5rem;
+  --bs-accordion-btn-padding-x: 0.75rem;
 }
 
 .twf-sidebar-menu .twf-sidebar-menu-parent-link {
   padding: var(--bs-accordion-btn-padding-y) 0;
+  color: var(--bs-body-color);
+}
+
+.twf-sidebar-menu :is(.twf-sidebar-menu-parent-link.active, .twf-sidebar-menu-parent-link:hover) {
+  color: var(--bs-link-color);
 }
 
 .twf-sidebar-menu .accordion-button:not(.collapsed) {
@@ -133,9 +145,14 @@ body {
   --bs-accordion-active-bg: var(--bs-accordion-btn-bg);
 }
 
+/* breakpoint: lg */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     align-items: center;
+  }
+
+  .twf-sidebar-menu {
+    padding: 0 calc(var(--bs-gutter-x) * .5);
   }
 
   .twf-docs-toc {
@@ -175,17 +192,17 @@ body {
   border-radius: var(--bs-border-radius);
 }
 
-.font-list .card {
-  transition: background-color .15s linear;
-}
-
-.font-list .card:hover {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-tertiary-bg-rgb), 1);
-}
-
 .index-features .bi {
   font-size: 3rem;
+}
+
+.bg-hover {
+  transition: background-color .15s ease-in-out;
+}
+
+.bg-hover:hover {
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+  background-color: rgba(var(--bs-secondary-bg-rgb), 1);
 }
 
 /* Dark Theme */

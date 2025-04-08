@@ -8,13 +8,13 @@
       {{- partial "header.html" . -}}
     </div>
     <div class="container-fluid">
-      <div class="row">
+      <main class="row">
         {{- block "sidebar" . }}
-          <div class="col-lg-3 col-xxl-2">
+          <div class="col-lg-3 col-xxl-2 border-end p-0">
             {{ partial "sidebar" . }}
           </div>
         {{- end }}
-        <div class="col-lg-9 col-xxl-10 my-lg-4 my-2">
+        <div class="col-lg-9 col-xxl-10 my-lg-4 my-2 px-md-4">
           {{- block "main" . }}
             <h1>{{ .Title }}</h1>
             <article>
@@ -22,7 +22,7 @@
             </article>
           {{- end }}
         </div>
-      </div>
+      </main>
     </div>
     {{ partialCached "svg-icons.html" . }}
     {{ partialCached "script.html" . }}

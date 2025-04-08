@@ -1,5 +1,5 @@
 <div
-  class="twf-sidebar-menu accordion accordion-flush w-100 mt-1"
+  class="twf-sidebar-menu accordion accordion-flush w-100"
   id="sidebarNav"
 >
   {{ $currentPage := . }}
@@ -13,17 +13,17 @@
         >
           {{- if .URL }}
             <a
-              class="twf-sidebar-menu-parent-link flex-fill border-end fs-6 text-decoration-none {{ if $show }}
-                text-primary-color
+              class="twf-sidebar-menu-parent-link flex-fill fs-6 text-decoration-none {{ if $show }}
+                active
               {{ else }}
-                collapsed text-reset
+                collapsed
               {{ end }}"
               href="{{ .URL }}"
               >{{ .Name }}</a
             >
             <button
-              class="accordion-button {{ if $show -}}
-                text-primary-color
+              class="accordion-button bg-hover rounded-circle {{ if $show -}}
+              active
               {{ else }}
                 collapsed text-reset
               {{- end }} w-auto"
@@ -35,10 +35,10 @@
             ></button>
           {{- else -}}
             <button
-              class="accordion-button {{ if $show }}
-                text-primary-color
+              class="accordion-button bg-hover rounded-circle {{ if $show }}
+                active
               {{ else }}
-                collapsed text-reset
+                collapsed
               {{ end }}"
               type="button"
               data-bs-toggle="collapse"
@@ -55,7 +55,7 @@
           class="accordion-collapse collapse {{ if $show }}show{{ end }}"
           aria-labelledby="heading-{{ .Identifier }}"
         >
-          <div class="accordion-body border-bottom px-0 py-2">
+          <div class="accordion-body border-bottom p-2">
             <nav class="nav nav-pills flex-column gap-1">
               {{- range .Children }}
                 {{- $active := $currentPage.IsMenuCurrent "sidebar" . -}}
@@ -76,11 +76,11 @@
       {{ $current :=$currentPage.IsMenuCurrent "sidebar" . }}
       <div class="accordion-item no-children">
         <a
-          class="twf-sidebar-menu-parent-link d-flex fs-6 text-decoration-none {{ if $current }}
+          class="twf-sidebar-menu-parent-link d-flex fs-6 text-decoration-none w-full {{ if $current }}
             active
           {{ else }}
-            collapsed text-reset
-          {{ end }} w-full"
+            collapsed
+          {{ end }}"
           href="{{ .URL }}"
           >{{ .Name }}</a
         >
