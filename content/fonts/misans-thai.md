@@ -15,7 +15,7 @@ font:
   license: '[MiSans Font Intellectual Property License Agreement (PDF)](https://hyperos.mi.com/font-download/MiSans%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE.pdf)'
   download: https://hyperos.mi.com/font/en/details/thai/
   external: true
-  previewFile: /files/MiSansThaiVF.woff2
+  previewFile: https://fonts-files.shabu.dev/MiSansThaiVF.woff2
   weight:
     weight: [150, 200, 250, 305, 330, 380, 450, 520, 630, 700]
     default: 330
@@ -51,7 +51,7 @@ tags:
 <style>
 @font-face {
   font-family: 'MiSans Thai';
-  src: url('/files/MiSansThaiVF.woff2') format('woff2');
+  src: url('https://fonts-files.shabu.dev/MiSansThaiVF.woff2') format('woff2');
   font-style: normal;
   font-weight: 150 700;
   font-display: swap;
@@ -59,7 +59,7 @@ tags:
 
 @font-face {
   font-family: 'MiSans Latin';
-  src: url('/files/MiSansLatinVF.woff2') format('woff2');
+  src: url('https://fonts-files.shabu.dev/MiSansLatinVF.woff2') format('woff2');
   font-style: normal;
   font-weight: 150 700;
   font-display: swap;
