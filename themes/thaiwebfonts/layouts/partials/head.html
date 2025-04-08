@@ -2,6 +2,7 @@
 {{- $chromaCSS := resources.Get "css/chroma.css" -}}
 {{- $fontPreviewCSS := resources.Get "css/font-preview.css" | minify -}}
 {{- $bundleCSS := slice $mainCSS $chromaCSS | resources.Concat "css/main.bundle.css" | minify -}}
+{{ $headJS := resources.Get "js/dark-mode-head.js" | minify }}
 
 
 <meta charset="UTF-8" />
@@ -39,3 +40,7 @@
 {{ if .IsHome -}}
 <link rel="stylesheet" href="{{ $fontPreviewCSS.RelPermalink }}">
 {{ end }}
+
+<script>
+  {{ $headJS.Content | safeJS }}
+</script>
