@@ -1,6 +1,6 @@
 # Thai Web Fonts Docs
 
-เว็บไซต์ [Thai Web Fonts](https://thaiwebfonts.pages.dev/)
+เว็บไซต์ [Thai Web Fonts](https://thaiwebfonts.shabu.dev/)
 
 - สร้างด้วย
   - [Hugo](https://gohugo.io/)
