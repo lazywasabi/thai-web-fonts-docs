@@ -1,5 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy to Cloudflare Pages
+name: Deploy
 
 on: [push, workflow_dispatch]
 
@@ -61,6 +60,7 @@ jobs:
           name: site
           path: ./public
 
+  # Deploy job
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
@@ -80,5 +80,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy public --project-name=thaiwebfonts
-          # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
