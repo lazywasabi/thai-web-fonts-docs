@@ -23,7 +23,7 @@
       const fileName = document.querySelector(".file-name");
       const url = new URL(window.location)
       const downloadFont = window.location.pathname.split("/").pop() || url.searchParams.get("font");
-      const downloadURL = "https://o8v3.c14.e2-1.dev/thaiwebfonts/" + downloadFont + ".zip"
+      const downloadURL = "https://s3.shabu.dev/thaiwebfonts/" + downloadFont + ".zip"
       const downloadLink = document.querySelector(".download-link");
 
       title.innerText = "กำลังดาวน์โหลดไฟล์ " + downloadFont + ".zip";
