@@ -63,6 +63,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
+    needs: build
     permissions:
       contents: read
       deployments: write
