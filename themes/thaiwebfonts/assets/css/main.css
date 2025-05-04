@@ -28,6 +28,7 @@ body {
 
 main {
   min-height: calc(100vh - var(--header-height));
+  align-content: flex-start;
 }
 
 .highlight {
@@ -147,6 +148,10 @@ main {
 
 /* breakpoint: lg */
 @media (min-width: 992px) {
+  main {
+    align-content: normal;
+  }
+
   .navbar-expand-lg .navbar-nav {
     align-items: center;
   }
