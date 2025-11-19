@@ -1,0 +1,9 @@
+var/PlaypenSansThai[wght].woff2
+PlaypenSansThai-Bold.woff2
+PlaypenSansThai-ExtraBold.woff2
+PlaypenSansThai-ExtraLight.woff2
+PlaypenSansThai-Light.woff2
+PlaypenSansThai-Medium.woff2
+PlaypenSansThai-Regular.woff2
+PlaypenSansThai-SemiBold.woff2
+PlaypenSansThai-Thin.woff2

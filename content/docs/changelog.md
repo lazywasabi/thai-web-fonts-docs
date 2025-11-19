@@ -7,6 +7,10 @@ menu:
     parent: docs
 ---
 
+## v7.6.0
+
+- เพิ่มฟอนต์ [Playpen Sans Thai](/fonts/playpen-sans-thai)
+
 ## v7.5.0
 
 - อัปเดตฟอนต์ [Noto Sans Thai Looped](/fonts/noto-sans-thai-looped/) เป็น [v2.000](https://github.com/notofonts/thai/releases/tag/NotoSansThaiLooped-v2.000)
