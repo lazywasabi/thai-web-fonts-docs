@@ -22,9 +22,6 @@ font:
       max: 800
 tags:
 - ไม่มีหัว
-badge:
-  text: ใหม่
-  class: text-bg-danger
 ---
 
 <div></div>
